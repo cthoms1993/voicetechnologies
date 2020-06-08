@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'accounts',
     'products',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -127,5 +128,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles/static'),)
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media'
+MEDIA_URL = '/media/'
 
