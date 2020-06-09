@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
+{%  load bootstrap_tags %}
 {% block content %}
     <div class="row row-flex">
         {% for product in products %}
@@ -8,7 +10,6 @@
                     <h3>{{ product.name }}</h3>
                     <p class="product-description">{{ product.description }}</p>
                     <p>{{ product.price }}</p>
-
                     <form method="post" action="{% url 'add_to_cart' product.id %}">
                         {% csrf_token %}
                         <div class="input-group">
