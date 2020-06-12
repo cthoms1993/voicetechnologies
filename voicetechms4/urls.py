@@ -22,6 +22,7 @@ from products import urls as urls_products
 from cart import urls as urls_cart
 from search import urls as urls_search
 from products.views import all_products
+from checkout import urls as urls_checkout
 from .settings import MEDIA_ROOT
 from django.conf import settings
 from django.views import static
@@ -35,7 +36,8 @@ urlpatterns = [
                   url(r'^products/', include(urls_products)),
                   url(r'^cart/', include(urls_cart)),
                   url(r'^search/', include(urls_search)),
+                  url(r'^checkout/', include(urls_checkout)),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-if settings.DEBUG: # new
+if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
