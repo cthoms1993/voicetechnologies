@@ -27,6 +27,7 @@ from .settings import MEDIA_ROOT
 from django.conf import settings
 from django.views import static
 from django.conf.urls.static import static
+from staff.views import all_staff
 
 urlpatterns = [
                   url(r'^admin/', admin.site.urls),
@@ -37,6 +38,7 @@ urlpatterns = [
                   url(r'^cart/', include(urls_cart)),
                   url(r'^search/', include(urls_search)),
                   url(r'^checkout/', include(urls_checkout)),
+                  url(r'^about/', all_staff, name='about'),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:

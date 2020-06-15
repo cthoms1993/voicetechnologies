@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/91ec00a070.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    {%  block head_js %}
+    {% block head_js %}
     {% endblock head_js %}
 </head>
 <body>
@@ -30,6 +30,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'about' %}"><i class="fas fa-user-alt"></i>about us</a></li>
                 {% if user.is_authenticated %}
                     <li><a href="{% url 'profile' %}"><i class="fas fa-user-alt"></i>Profile</a></li>
                     <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>
@@ -58,12 +59,12 @@
     </div>
 {% endif %}
 <div class="container">
-<div class="display">
-    <form action="{% url 'search' %}" method="get">
-        <input type="text" name="q">
-        <button type="submit">Search</button>
-    </form>
-</div>
+    <div class="display">
+        <form action="{% url 'search' %}" method="get">
+            <input type="text" name="q">
+            <button type="submit">Search</button>
+        </form>
+    </div>
     {% block content %} {% endblock %}
 </div>
 <footer>
