@@ -15,6 +15,10 @@
                     <p><span class="boldtext">Tag:</span> {{ post.tag }}</p>
                     <a href="{% url 'get_posts' %}" class="btn btn-default">Back to Blog</a>
                     <hr>
+                    <h2>{{ comments.count }}</h2>
+                    {% for comment in comments %}
+
+                    {% endfor %}
                 </div>
             </div>
         </div>
