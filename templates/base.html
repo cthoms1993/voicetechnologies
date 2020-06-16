@@ -45,6 +45,15 @@
                         {% endif %}
                     </a>
                 </li>
+                <li>
+                    <div class="display">
+                        <form action="{% url 'search' %}" method="get">
+                            <input type="text" name="q">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+
+                </li>
             </ul>
         </div>
     </div>
@@ -59,12 +68,7 @@
     </div>
 {% endif %}
 <div class="container">
-    <div class="display">
-        <form action="{% url 'search' %}" method="get">
-            <input type="text" name="q">
-            <button type="submit">Search</button>
-        </form>
-    </div>
+
     {% block content %} {% endblock %}
 </div>
 <footer>
