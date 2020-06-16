@@ -28,6 +28,7 @@ from django.conf import settings
 from django.views import static
 from django.conf.urls.static import static
 from staff.views import all_staff
+from blog import urls as urls_blog
 
 urlpatterns = [
                   url(r'^admin/', admin.site.urls),
@@ -39,6 +40,7 @@ urlpatterns = [
                   url(r'^search/', include(urls_search)),
                   url(r'^checkout/', include(urls_checkout)),
                   url(r'^about/', all_staff, name='about'),
+                  url(r'^blog/', include(urls_blog)),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
