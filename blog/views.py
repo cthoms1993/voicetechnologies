@@ -25,7 +25,7 @@ def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.views += 1
     post.save()
-    comments = post.comments.filter(active=True)
+    comments = post.comments.filter(active=False)
     new_comment = None
     if request.method == 'POST':
         comment_form = CommentForm(data=request.POST)
