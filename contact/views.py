@@ -9,7 +9,7 @@ def contact(request):
         c = ContactForm(request.POST)
         if c.is_valid():
             c.save()
-            messages.add_message(request, messages.INFO, 'Your contact form ahs been submitted')
+            messages.add_message(request, messages.INFO, 'Your contact form has been submitted')
             return redirect('contact')
     else:
         c = ContactForm()

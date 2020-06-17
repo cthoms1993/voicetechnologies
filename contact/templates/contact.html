@@ -2,18 +2,7 @@
 {% load static %}
 {% load bootstrap_tags %}
 
-{% block title %}
-    Contact - {{ block.super }}
-{% endblock %}
-
 {% block content %}
-    {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
 
     <div class="content">
         <div class="section-inner clearfix">
