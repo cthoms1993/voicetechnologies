@@ -34,11 +34,11 @@ urlpatterns = [
                   url(r'^accounts/', include(urls_accounts)),
                   url(r'^products/', include(urls_products)),
                   url(r'^cart/', include(urls_cart)),
-                  url(r'^search/', include(urls_search)),
                   url(r'^checkout/', include(urls_checkout)),
+                  url(r'^search/', include(urls_search)),
                   url(r'^blog/', include(urls_blog)),
                   url(r'^contact/', include(urls_contact)),
-                  url(r'^staff/', include(urls_staff)),
+                  url(r'^about/', include(urls_staff)),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
