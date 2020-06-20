@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 {%  load bootstrap_tags %}
+
+{% block header %}
+    <h1>About us</h1>
+{% endblock %}
 {% block content %}
 <div class="row row-flex">
         {% for staff_member in staff_members %}

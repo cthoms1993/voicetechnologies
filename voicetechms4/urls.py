@@ -17,7 +17,6 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url, include
 from accounts import urls as urls_accounts
-from home.views import index
 from cart import urls as urls_cart
 from search import urls as urls_search
 from checkout import urls as urls_checkout
@@ -27,10 +26,12 @@ from blog import urls as urls_blog
 from contact import urls as urls_contact
 from products import urls as urls_products
 from staff import urls as urls_staff
+from home.views import home, index
 
 urlpatterns = [
                   url(r'^admin/', admin.site.urls),
-                  url(r'^$', index, name='index'),
+                  url(r'^$', home, name='home'),
+                  url(r'^index', index, name='index'),
                   url(r'^accounts/', include(urls_accounts)),
                   url(r'^products/', include(urls_products)),
                   url(r'^cart/', include(urls_cart)),
@@ -39,7 +40,6 @@ urlpatterns = [
                   url(r'^blog/', include(urls_blog)),
                   url(r'^contact/', include(urls_contact)),
                   url(r'^about/', include(urls_staff)),
-
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

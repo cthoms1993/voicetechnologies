@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load bootstrap_tags %}
+{% block header %}
+    <h1>Products</h1>
+{% endblock %}
 {% block content %}
     <div class="row row-flex">
         {% for product in products %}
