@@ -72,15 +72,19 @@
         </div>
     </div>
 {% endif %}
-<div class="container-fluid section-container header-container slantedDivA">
-    {% block header %} {% endblock %}
-</div>
+
+{% block header %}
+{% endblock %}
 
 <div class="container-fluid section-container middle-container slantedDivB">
     {% block content %}
     {% endblock %}
 </div>
 
+<div class="container-fluid section-container lower-container  slantedDivC">
+    {% block lower %}
+    {% endblock %}
+</div>
 <footer>
     <div class="container text-center ">
         <p>Made my thomson web design</p>

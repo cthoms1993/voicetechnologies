@@ -2,19 +2,16 @@
 {% load static %}
 {% load bootstrap_tags %}
 
-<div class="container section-container header-container">
-    {% block header%}
-        <img src="" alt="">
-     {% endblock %}
+{% block header %}
+<div class="container-fluid section-container img-container">
 </div>
-<div class="container section-container middle-container">
-    {% block content %}
-        <h1>testing the content container works</h1>
-    {% endblock %}
-</div>
-<div class="container section-container lower-container">
-    {% block lower %}
-        <h1>testing the lower container works</h1>
-    {% endblock %}
-</div>
+{% endblock %}
 
+{% block content %}
+    <h1>testing the content container works</h1>
+{% endblock %}
+
+
+{% block lower %}
+    <h1>testing the lower container works</h1>
+{% endblock %}

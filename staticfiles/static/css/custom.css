@@ -1,35 +1,27 @@
 body {
     font-family: Arial, serif;
     margin: 0;
-    background-color: dimgrey;
 }
 
-.slantedDivA {
-    position: relative;
-    width: 100%;
-    background: white;
-    box-sizing: border-box;
-    padding: 30px;
-    color: white;
-    margin-bottom: 268px;
+
+
+.img-container{
+    background-image: url("/media/images/VTheader.png");
+    background-position: center,center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+}
+
+.header-container {
+    background-position: center, center;
+    -webkit-background-size: cover;
+    background-size: cover;
     height: 400px;
-
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
 }
 
-.slantedDivA:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: inherit;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-origin: top right;
-    transform: skewy(-8deg);
-}
 
 .slantedDivB {
     position: relative;
@@ -38,6 +30,7 @@ body {
     box-sizing: border-box;
     padding: 30px;
     color: #fff;
+
 }
 
 .slantedDivB:before {
@@ -60,10 +53,7 @@ body {
 
 }
 
-.header-container {
-    background-color: white;
-    height: 300px;
-}
+
 
 .middle-container {
     height: 800px;
