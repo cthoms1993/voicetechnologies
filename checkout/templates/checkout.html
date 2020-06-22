@@ -11,6 +11,10 @@
     </script>
     <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock head_js %}
+{% block header %}
+    <div class="container-fluid section-container header-container">
+    </div>
+{% endblock %}
 {% block content %}
     <div class="row row-flex">
         {% for item in cart_items %}

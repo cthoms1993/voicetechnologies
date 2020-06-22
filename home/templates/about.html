@@ -1,20 +1,48 @@
 {% extends 'base.html' %}
 {% load static %}
-{%  load bootstrap_tags %}
-
+{% load bootstrap_tags %}
 {% block header %}
-    <h1>About us</h1>
+    <div class="container-fluid section-container header-container">
+        <div class="row scrolling-row">
+            <div class="col col-12 scrolling-col text-center">
+                <h1>Our Company</h1>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 {% block content %}
-<div class="row row-flex">
+    <div class="row">
+        <div class="col col-12 text-center">
+            <h1>About us</h1>
+            <p>
+                Voice Technologies is an award-winning, employee-owned software provider based in Paisley (near Glasgow)
+                and Sheffield in the UK. We help organisations to reduce the time and cost of producing correspondence
+                by using information and mobile workflow, speech recognition and digital dictation applications.
+
+                Customer-focus is at the heart of everything we do. We are a trusted partner to our clients in the
+                public and private sectors, working closely with them to understand the issues they face and creating
+                efficient ways of working that make a positive contribution to their financial and organisational
+                efficiency.
+
+                Our team of in-house specialists develops innovative software including the award-winning WinVoicePro, a
+                document creation and workflow management application, and FormStream, web-based e-forms for paperless
+                documentation.
+
+                We provide products and applications with industry-leading partner companies including Philips, Olympus
+                and Nuance, and we are a Microsoft Silver Application Developer.</p>
+        </div>
+    </div>
+{% endblock %}
+{% block lower %}
+    <div class="row row-flex">
         {% for staff_member in staff_members %}
             <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
                 <div class="panel-body">
                     <div class="product">
-                        <img class="product" src="{{staff_member.image.url}}" alt="{{ staff_member.name }}">
+                        <img class="product" src="{{ staff_member.image.url }}" alt="{{ staff_member.name }}">
                     </div>
                     <h3>{{ staff_member.name }}</h3>
-                    <p>{{ staff_member.title}}</p>
+                    <p>{{ staff_member.title }}</p>
                     <p class="product-description">{{ staff_member.description }}</p>
                 </div>
             </div>
