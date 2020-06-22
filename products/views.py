@@ -8,13 +8,13 @@ def all_products(request):
     return render(request, "products.html", {"products": products})
 
 
-def winvoicepro(request):
+def win_voice_pro(request):
     return render(request, "winvoicepro.html")
 
 
-def winvoiceweb(request):
+def win_voice_web(request):
     return render(request, "winvoiceweb.html")
 
 
-def formstream(request):
+def form_stream(request):
     return render(request, "formstream.html")

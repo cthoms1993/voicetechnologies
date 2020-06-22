@@ -8,8 +8,13 @@
     <title>Voice Technologies</title>
     <link rel="stylesheet" href="{% static 'css/theme.css' %}">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/91ec00a070.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     {% block head_js %}
     {% endblock head_js %}
@@ -32,6 +37,16 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'products' %}"><i class="fas fa-user-alt"></i>Store</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false">Products</a>
+                <div class="dropdown-menu" style="">
+                    <a class="dropdown-item" href="{% url 'formstream' %}">Formstream</a>
+                    <a class="dropdown-item" href="{% url 'winvoicepro' %}">Winvoice Prp</a>
+                    <a class="dropdown-item" href="{% url 'winvoiceweb' %}">Winvoice web</a>
+                    <div class="dropdown-divider"></div>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'view_cart' %}"><i class="fas fa-shopping-cart"></i>Cart
