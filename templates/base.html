@@ -16,7 +16,7 @@
 </head>
 <body class="">
 <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
-    <a class="navbar-brand" href="{%  url 'home' %}">Voice Technologies</a>
+    <a class="navbar-brand" href="{% url 'home' %}">Voice Technologies</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
             aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -72,19 +72,17 @@
         </div>
     </div>
 {% endif %}
-<div class="container section-container header-container">
-    {% block header%} {% endblock %}
+<div class="container-fluid section-container header-container slantedDivA">
+    {% block header %} {% endblock %}
 </div>
-<div class="container section-container middle-container">
+
+<div class="container-fluid section-container middle-container slantedDivB">
     {% block content %}
     {% endblock %}
 </div>
-<div class="container section-container lower-container">
-    {% block lower %}
-    {% endblock %}
-</div>
+
 <footer>
-    <div class="container">
+    <div class="container text-center ">
         <p>Made my thomson web design</p>
     </div>
 </footer>
