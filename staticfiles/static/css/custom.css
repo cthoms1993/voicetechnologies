@@ -3,6 +3,9 @@ body {
     margin: 0;
 }
 
+.navbar {
+    background-color: #562b5e;
+}
 
 .img-container {
     background-image: url("/media/images/VTheader.png");
@@ -12,6 +15,7 @@ body {
     height: 800px;
     clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
 }
+
 
 .header-container {
     background-color: #ff8200;
@@ -157,4 +161,8 @@ caption p {
 
 .product-description {
     min-height: 40px;
+}
+
+.home-card {
+    background-color: #562b5e;
 }
