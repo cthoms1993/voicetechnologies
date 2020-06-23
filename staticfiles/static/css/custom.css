@@ -164,5 +164,9 @@ caption p {
 }
 
 .home-card {
-    background-color: #562b5e;
+    border-radius: 17px;
+    background: linear-gradient(145deg, #4d2755, #5c2e65);
+    box-shadow: 19px 19px 36px #412047,
+    -19px -19px 36px #6c3676;
+    text-align: center;
 }
