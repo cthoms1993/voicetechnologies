@@ -2,6 +2,7 @@ body {
     font-family: Arial, serif;
     margin: 0;
     background-color: #562b5e;
+    color: white;
 
 }
 
@@ -9,9 +10,6 @@ body {
     background-color: #562b5e;
 }
 
-.navbar-brand {
-
-}
 
 .img-container {
     background-image: url("/media/images/VTheader.png");
@@ -34,15 +32,11 @@ body {
 }
 
 
-.slantedDivA {
+.middle-container{
     position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 30px;
     color: #fff;
-    height: 500px;
+    height: 300px;
     background-color: #562b5e;
-    margin-bottom: 267px;
 
 }
 
@@ -61,57 +55,14 @@ body {
     transform: skewy(-8deg);
 }
 
-.slantedDivA:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: inherit;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-origin: top right;
-    transform: skewY(-8deg);
 
-}
 
-.slantedDivB {
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 30px;
+.lower-container{
     color: #fff;
-    height: 800px;
+    height: 500px;
     background-color: #562b5e;
-
-
 }
 
-.slantedDivB:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: inherit;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-origin: bottom left;
-    transform: skewY(-8deg);
-}
-
-
-footer {
-    height: 400px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: #A9A9A9;
-    background-color: #ff8200;
-}
 
 .icon-bar {
     background-color: #fff;
@@ -255,4 +206,10 @@ caption p {
     color: #fff;
     transform: scale(1.6);
     -webkit-text-fill-color: #fff;
+}
+
+footer {
+    height: 200px;
+    color: #A9A9A9;
+    background-color: #ff8200;
 }

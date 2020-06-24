@@ -34,18 +34,23 @@
     </div>
 {% endblock %}
 {% block lower %}
-    <div class="row row-flex">
-        {% for staff_member in staff_members %}
-            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
-                <div class="panel-body">
-                    <div class="product">
-                        <img class="product" src="{{ staff_member.image.url }}" alt="{{ staff_member.name }}">
+    <div class="container-fluid">
+        <div class="row row-flex">
+            {% for staff_member in staff_members %}
+                <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
+                    <div class="card mb-3 home-card">
+                        <div class="card-body">
+                            <img class="product" src="{{ staff_member.image.url }}" alt="{{ staff_member.name }}">
+                            <h2 class="card-title">{{ staff_member.name }}</h2>
+                            <h3 class="card-subtitle text-muted">{{ staff_member.title }}</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">{{ staff_member.description }}</p>
+                        </div>
                     </div>
-                    <h3>{{ staff_member.name }}</h3>
-                    <p>{{ staff_member.title }}</p>
-                    <p class="product-description">{{ staff_member.description }}</p>
                 </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
+
