@@ -10,6 +10,9 @@ body {
     background-color: #562b5e;
 }
 
+.navbar-brand {
+
+}
 
 .img-container {
     background-image: url("/media/images/VTheader.png");
@@ -58,8 +61,8 @@ body {
 
 
 .lower-container{
-    color: #fff;
     height: 500px;
+    color: #fff;
     background-color: #562b5e;
 }
 
@@ -106,19 +109,6 @@ caption p {
     margin-top: 30px;
 }
 
-.panel-default {
-    border-color: transparent;
-    padding: 0 10px;
-}
-
-.panel-body {
-
-    border: 1px solid #ddd;
-}
-
-.product-description {
-    min-height: 40px;
-}
 
 .home-card {
     border-radius: 17px;
@@ -126,6 +116,10 @@ caption p {
     box-shadow: 19px 19px 36px #412047,
     -19px -19px 36px #6c3676;
     text-align: center;
+}
+
+.staff-card{
+    height: 500px;
 }
 
 .social-container {
@@ -210,6 +204,7 @@ caption p {
 
 footer {
     height: 200px;
+    padding-top: 100px;
     color: #A9A9A9;
     background-color: #ff8200;
 }
