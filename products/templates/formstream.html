@@ -3,16 +3,24 @@
 {% load bootstrap_tags %}
 
 {% block header %}
-    <div class="container-fluid section-container img-container">
+    <div class="container-fluid section-container header-container">
     </div>
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid title-container">
+    <div class="container-fluid title-container middle-container">
         <div class="row main-title-row">
             <div class="col-12 text-center">
-                <h1>Reducing the time and costs of producing correspondence.</h1>
-                <h2>information and mobile workflow,speech recognition and digital dictation applications</h2>
+                <h1>Making paper form a thing of the past.</h1>
+                <h2>FormStream is our web-based e-Forms (electronic forms) application. It supports the drive to make
+                    paper forms obsolete by enabling you to populate, save, process and upload forms in one move.
+
+                    Developed by Voice Technologies in collaboration with the NHS, FormStream replaces the paper forms
+                    commonly used for information capture. Data entered into FormStream forms are saved, processed and
+                    uploaded to a patient’s record in one move so it is shared instantly.
+
+                    FormStream eliminates the need to print, scan and upload paper forms, leaving time-consuming pen and
+                    paper trails in the past.</h2>
             </div>
         </div>
     </div>
@@ -20,5 +28,38 @@
 
 
 {% block lower %}
-    <h1>testing the lower container works</h1>
+    <div class="container-fluid formstream-container">
+        <div class="row">
+            <div class="col-12  align-items-center">
+                <h1><u>Key features:</u></h1>
+                <ul>
+                    <li>Integrates with national IT systems including SCI-Store, Electronic Data Transfer (EDT) and
+                        clinical
+                        portals.
+                    </li>
+                    <li>Forms are auto-populated from demographic information using data from the patient admin system.
+                        Option to save e-Forms as draft and amend later.
+                    </li>
+                    <li>e-Forms can be created or updated anywhere using a tablet or mobile, synchronised on return to
+                        the
+                        clinic, and uploaded to the Electronic Patient Record (EPR).
+                    </li>
+                    <li>Fully encrypted data.</li>
+                    <li>
+                        Supported across mobile and web platforms via web browsers or device running Windows 7, 8 or 10.
+                    </li>
+                </ul>
+                <h1><u>Key benefits:</u></h1>
+                <ul>
+                    <li>No client install required.</li>
+                    <li>Data security guaranteed.</li>
+                    <li> Patient information up-to-date and shared instantly.</li>
+                    <li>No need for hard copies, saving £0.63+ per document (source: NHS Tayside, 2014).</li>
+                    <li> Patient data readily accessible for analysis and reporting.</li>
+                    <li>Authorised users can access colleagues’ completed forms post-verification.</li>
+                    <li>Documents shared across service boundaries to support patient care.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 {% endblock %}
