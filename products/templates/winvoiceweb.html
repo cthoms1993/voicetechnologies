@@ -3,16 +3,41 @@
 {% load bootstrap_tags %}
 
 {% block header %}
-    <div class="container-fluid section-container img-container">
+    <div class="container-fluid section-container header-container">
+        <h1>Winvoiceweb</h1>
+        <h2>Simple, fast, end-to-end document creation and distribution online for the NHS</h2>
     </div>
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid title-container">
+    <div class="container-fluid title-container middle-container">
         <div class="row main-title-row">
             <div class="col-12 text-center">
-                <h1>Reducing the time and costs of producing correspondence.</h1>
-                <h2>information and mobile workflow,speech recognition and digital dictation applications</h2>
+                <h1>WinVoiceWeb is the next evolution in the WinVoice suite of products</h1>
+                <h3>Entirely web-based, WinVoiceWeb combines WinVoicePro functionality with a fully refreshed user
+                    interface to allow even quicker document production, management and distribution.</h3>
+                <h4>Streamlining, simplifying and speeding up document workflow is at the core of WinVoiceWeb</h4>
+                <h4>New document creation</h4>
+                <p>In WinVoiceWeb, the creation of a new document has never been easier. A simple two step process,
+                    simply enter a patient identifier and select a letter template and your document will be created.
+                <p>
+
+                <h4>Verification</h4>
+                <p>Documents can be created and verified in one step or, alternatively, can be saved for verification
+                    at a later date. Documents requiring verification are easily accessible from the home screen of
+                    WinVoiceWeb.</p>
+
+                <h4>Document management</h4>
+                <p>WinVoiceWeb has all the document management features available in WinVoicePro allowing documents to
+                    be routed, printed or flagged as necessary.</p>
+
+                <h4>Remote launch integration</h4>
+                <p>WinVoiceWeb can be launched from within third party systems, such as Clinical Portal, allowing the
+                    new job process to be launched from within other clinical systems.</p>
+
+                <h4>Development</h4>
+                <p>Development is being phased, with all clinician functionality featuring in the first version. All
+                    secretarial information will be made available from version 2 onwards.</p>
             </div>
         </div>
     </div>
@@ -20,5 +45,39 @@
 
 
 {% block lower %}
-    <h1>testing the lower container works</h1>
+    <div class="container-fluid winvoiceweb-container">
+        <div class="row">
+            <div class="col-12 col-md-6 align-items-center">
+                <div class="embed-responsive embed-responsive-16by9 my-3 rounded video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/G8aaT1suIf8" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-12  align-items-center">
+                <h1><u>Key features:</u></h1>
+                <ul>
+                    <li>Web-based application, removing the need for any software installation</li>
+                    <li>Incorporates all the document management features currently available in WinVoicePro</li>
+                    <li>Links with existing applications and databases to populate documents automatically</li>
+                    <li>Sends encrypted electronic documents for amendment, approval and dispatch</li>
+                    <li>Easy to search for and add recipients</li>
+                    <li>Can be launched from within third party systems, such as Clinical Portal</li>
+                    <li>Can only be accessed by authenticated users.</li>
+                </ul>
+                <h1><u>Key benefits:</u></h1>
+                <ul>
+                    <li>Eliminates the time, cost and potential errors involved in re-keying data</li>
+                    <li>Accelerates document turnaround times</li>
+                    <li>Reduces resource, postage and printing costs.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <a class="nav-link" href="{% url 'products' %}">
+                <button type="button" class="btn btn-warning">back to products page</button>
+            </a>
+        </div>
+    </div>
 {% endblock %}
