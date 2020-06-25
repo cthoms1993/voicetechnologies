@@ -3,16 +3,26 @@
 {% load bootstrap_tags %}
 
 {% block header %}
-    <div class="container-fluid section-container img-container">
+    <div class="container-fluid section-container header-container">
+        <h1>WinvoicePro</h1>
+        <h2>Simple, fast, end-to-end document creation and distribution</h2>
     </div>
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid title-container">
+    <div class="container-fluid title-container middle-container">
         <div class="row main-title-row">
             <div class="col-12 text-center">
-                <h1>Reducing the time and costs of producing correspondence.</h1>
-                <h2>information and mobile workflow,speech recognition and digital dictation applications</h2>
+                <h1>WinVoicePro is Voice Technologies’ document workflow application</h1>
+                <h3>It has created 30 million documents and distributed 21 million electronically resulting in savings
+                    approaching £15m to our customers. Developed by Voice Technologies in collaboration with the NHS,
+                    WinVoicePro saves healthcare providers time and money.
+
+                    It is a complete end-to-end solution that allows users to create letters, reports and other
+                    documents and distribute them electronically or in print. It is highly adaptable, having been
+                    designed to work seamlessly alongside existing software to make the job of document creation easier
+                    and faster. It can be used on the move too with an optional mobile add-on that enables users to
+                    view, edit and authorise documents anywhere to avoid delays.</h3>
             </div>
         </div>
     </div>
@@ -20,5 +30,34 @@
 
 
 {% block lower %}
-    <h1>testing the lower container works</h1>
+    <div class="container-fluid winvoicepro-container">
+
+        <div class="row">
+            <div class="col-12  align-items-center">
+                <h1><u>Key features:</u></h1>
+                <ul>
+                    <li>Links with existing applications and databases to populate documents automatically</li>
+                    <li>Turns digital dictations from WinScribe into documents for dispatch</li>
+                    <li>Sends encrypted electronic documents for amendment, approval and dispatch</li>
+                    <li>Omni-search facility makes it easy to search for and add recipients (v2.4)</li>
+                    <li>Default recipient saves secretarial time by dispatching to the patient’s referring GP or
+                        defaulting to their registered GP (v2.4).
+                    </li>
+                </ul>
+                <h1><u>Key benefits:</u></h1>
+                <ul>
+                    <li>Fills the costly void between digital dictation and distribution</li>
+                    <li>Eliminates the time, cost and potential errors involved in re-keying data</li>
+                    <li>Accelerates document turnaround times</li>
+                    <li>Reduces resource, postage and printing costs</li>
+                    <li>Mobile add-on saves time and makes use of existing hardware.</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <a class="nav-link" href="{% url 'products' %}">
+                <button type="button" class="btn btn-warning">back to products page</button>
+            </a>
+        </div>
+    </div>
 {% endblock %}
