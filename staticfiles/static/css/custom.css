@@ -1,8 +1,9 @@
-body {
+html, body {
     font-family: Arial, serif;
     margin: 0;
     background-color: #562b5e;
     color: white;
+    overflow-x: hidden;
 
 }
 

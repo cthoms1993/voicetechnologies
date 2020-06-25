@@ -13,7 +13,7 @@ def index(request):
 def logout(request):
     auth.logout(request)
     messages.success(request, "you have successfully been logged out")
-    return redirect(reverse('index'))
+    return redirect(reverse('home'))
 
 
 def login(request):
@@ -28,7 +28,7 @@ def login(request):
             if user:
                 auth.login(user=user, request=request)
                 messages.success(request, "You have successfully logged in!")
-                return redirect(reverse('index'))
+                return redirect(reverse('home'))
             else:
                 login_form.add_error(None, "Your username or password is incorrect")
     else:
