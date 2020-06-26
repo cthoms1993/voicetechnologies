@@ -43,6 +43,11 @@ html, body {
 
 }
 
+.cart-container{
+    color: #fff;
+}
+
+
 .store-img {
     background-color: white;
     background-size: contain;
@@ -84,6 +89,7 @@ html, body {
     width: 150px;
     height: 150px;
     margin: 0 auto;
+    background-color: white;
 }
 
 caption p {
@@ -107,6 +113,9 @@ caption p {
 
 .staff-card {
     height: 500px;
+}
+.product-card {
+    height:500px;
 }
 
 .social-container {
