@@ -117,6 +117,9 @@ caption p {
 .product-card {
     height:500px;
 }
+.contact-card {
+    width:600px;
+}
 
 .social-container {
     width: 400px;
