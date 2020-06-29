@@ -2,8 +2,13 @@
 {% load static %}
 {% load bootstrap_tags %}
 {% block header %}
- <div class="container-fluid section-container header-container">
-</div>
+    <div class="container-fluid section-container header-container">
+        <div class="row title-row align-items-center cart-title">
+            <div class="col-12 title-col">
+                <h1 class="page-title"><u>{{ post.title }}</u></h1>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block content %}
@@ -33,21 +38,21 @@
                     </div>
                 {% endfor %}
                 <hr>
-            <div class="card-body">
-                {% if new_comment %}
-                    <div class="alert alert-success" role="alert">
-                    <p>your comment is awaiting moderation<</p>
-                    </div>
+                <div class="card-body">
+                    {% if new_comment %}
+                        <div class="alert alert-success" role="alert">
+                            <p>your comment is awaiting moderation<</p>
+                        </div>
                     {% else %}
-                    <h3> Leave a comment</h3>
-                    <form method="post" style="margin-top: 1.3em;">
-                    {{ comment_form | as_bootstrap}}
-                    {% csrf_token %}
-                    <button type="submit" class="btn btn-primary btn-lg">Submit comment</button>
-                    </form>
-                {% endif %}
+                        <h3> Leave a comment</h3>
+                        <form method="post" style="margin-top: 1.3em;">
+                            {{ comment_form | as_bootstrap }}
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary btn-lg">Submit comment</button>
+                        </form>
+                    {% endif %}
+                </div>
             </div>
         </div>
-    </div>
     </div>
 {% endblock %}

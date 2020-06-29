@@ -102,15 +102,21 @@ caption p {
 }
 
 .logo {
+    font-size: 150px;
     color: #ff8200;
-    font-size: 400px;
 }
 
 .page-title {
-    font-size: 300px;
+    font-size: 200px;
     color: #562b5e;
-
 }
+
+.title-col{
+    padding-top: 50px;
+}
+
+
+
 
 .home-card {
     border-radius: 17px;

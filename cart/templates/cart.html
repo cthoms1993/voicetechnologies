@@ -3,70 +3,75 @@
 {% load bootstrap_tags %}
 {% block header %}
     <div class="container-fluid section-container header-container">
+        <div class="row title-row align-items-center cart-title">
+            <div class="col-12 title-col">
+                <h1 class="page-title"><u>Cart <i class="fas fa-shopping-cart logo"></i></u></h1>
+            </div>
+        </div>
     </div>
 {% endblock %}
 {% block content %}
     <div class="container-fluid cart-container">
-            {% if cart_items %}
-                {% for item in cart_items %}
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
-                        <div class="card mb-3 home-card product-card text-center">
-                            <div class="product rounded-circle"
-                                 style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')">
-                            </div>
-                            <div class="caption">
-                                <h3>{{ item.product.name }}</h3>
-                                <p>{{ item.product.price }} per user license</p>
-                                <div class="qnty-form">
-                                    <form class="form" method="post" action="{% url 'adjust_cart' item.id %}">
-                                        {% csrf_token %}
-                                        <div class="form-group">
-                                            <div>quantity</div>
-                                            <div>{{ item.quantity }}</div>
-                                        </div>
-                                        <div class="form-group text-center">
-                                            <p>
-                                                Change quantity -
-                                                <label>
-                                                    <input  id= "quantity" name="quantity" type="number"
-                                                           min="0" max="999" class="form-control input-number text-white"
-                                                           value="{{ item.quantity }}">
-                                                </label>
-                                            </p>
-                                        </div>
+        {% if cart_items %}
+            {% for item in cart_items %}
+                <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
+                    <div class="card mb-3 home-card product-card text-center">
+                        <div class="product rounded-circle"
+                             style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')">
+                        </div>
+                        <div class="caption">
+                            <h3>{{ item.product.name }}</h3>
+                            <p>{{ item.product.price }} per user license</p>
+                            <div class="qnty-form">
+                                <form class="form" method="post" action="{% url 'adjust_cart' item.id %}">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <div>quantity</div>
+                                        <div>{{ item.quantity }}</div>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <p>
+                                            Change quantity -
+                                            <label>
+                                                <input id="quantity" name="quantity" type="number"
+                                                       min="0" max="999" class="form-control input-number text-white"
+                                                       value="{{ item.quantity }}">
+                                            </label>
+                                        </p>
+                                    </div>
 
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-warning"><span
-                                                    class="glyphicon glyphicon-edit"
-                                                    aria-hidden="true"></span>Amend
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-warning"><span
+                                                class="glyphicon glyphicon-edit"
+                                                aria-hidden="true"></span>Amend
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                {% endfor %}
-                <br>
-                <br>
-                <div class="container fluid total-container text-center">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <p>Total</p>
-                            <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
-                        </div>
+                </div>
+            {% endfor %}
+            <br>
+            <br>
+            <div class="container fluid total-container text-center">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>Total</p>
+                        <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
                     </div>
-                    <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span
-                            class="glyphicon glyphicon-ok-sign"
-                            aria-hidden="true"></span>Checkout</a>
                 </div>
-            {% else %}
-                <div class="col-sm-12 text-center">
-                    <p class="page-desc">Your Cart is empty! have a look at the products in our store.</p>
-                    <a class="nav-link" href="{% url 'products' %}">
-                        <button type="button" class="btn btn-warning">visit our store to purchase</button>
-                    </a>
-                </div>
-            {% endif %}
+                <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span
+                        class="glyphicon glyphicon-ok-sign"
+                        aria-hidden="true"></span>Checkout</a>
+            </div>
+        {% else %}
+            <div class="col-sm-12 text-center">
+                <p class="page-desc">Your Cart is empty! have a look at the products in our store.</p>
+                <a class="nav-link" href="{% url 'products' %}">
+                    <button type="button" class="btn btn-warning">visit our store to purchase</button>
+                </a>
+            </div>
+        {% endif %}
     </div>
 {% endblock %}
