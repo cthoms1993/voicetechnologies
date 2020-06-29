@@ -3,15 +3,21 @@
 
 
 {% block header %}
- <div class="container-fluid section-container header-container">
-</div>
+    <div class="container-fluid section-container header-container">
+    </div>
 {% endblock %}
 
 {% block content %}
-  <p>If you already have an account - <a href="{% url 'login' %}">sign in here</a></p>
-     <form method="POST">
-    {% csrf_token %}
-    {{ registration_form | as_bootstrap}}
-  <button type="submit" class="btn btn-primary">Register your profile</button>
-</form>
+    <div class="container-fluid login-container">
+        <div class="row signin-row justify-content-center">
+            <div class="col-6 text-center signin-col card signin-card home-card">
+                <p>If you already have an account - <a href="{% url 'login' %}">sign in here</a></p>
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ registration_form | as_bootstrap }}
+                    <button type="submit" class="btn btn-warning">Register your profile</button>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -15,6 +15,10 @@ html, body {
 
 }
 
+.form{
+  font-size: 15px;
+}
+
 .img-container {
     background-image: url("/media/images/VTheader.png");
     background-position: center, center;
@@ -43,7 +47,7 @@ html, body {
 
 }
 
-.cart-container{
+.cart-container {
     color: #fff;
 }
 
@@ -114,11 +118,13 @@ caption p {
 .staff-card {
     height: 500px;
 }
+
 .product-card {
-    height:500px;
+    height: 500px;
 }
+
 .contact-card {
-    width:600px;
+    width: 600px;
 }
 
 .social-container {
@@ -161,7 +167,7 @@ caption p {
     height: 60px;
     border-radius: 100%;
     display: block;
-    background: linear-gradient(45deg, #ff003c, #c648c8);
+    background: #ff8200;
     transition: all 265ms ease-out;
 }
 
@@ -174,8 +180,8 @@ caption p {
     transform: scale(2.2);
     -ms-transform: scale(2.2);
     -webkit-transform: scale(2.2);
-    color: #ff003c;
-    background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+    color: #ff8200;
+    background: #ff8200;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 265ms ease-in;

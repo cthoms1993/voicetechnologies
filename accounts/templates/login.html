@@ -1,14 +1,20 @@
 {% extends 'base.html' %}
 {% load bootstrap_tags %}
 {% block header %}
- <div class="container-fluid section-container header-container">
-</div>
+    <div class="container-fluid section-container header-container">
+    </div>
 {% endblock %}
 
 {% block content %}
-    <form method="POST">
-    {% csrf_token %}
-    {{ login_form | as_bootstrap }}
-    <button type="submit" class="btn btn-primary">log in</button>
-</form>
+    <div class="container-fluid login-container">
+        <div class="row signin-row justify-content-center">
+            <div class="col-6 text-center signin-col card signin-card home-card">
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ login_form | as_bootstrap}}
+                    <button type="submit" class="btn btn-warning">log in</button>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}
