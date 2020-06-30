@@ -17,7 +17,7 @@
 {% block content %}
     <div class="container-fluid contact-container">
         <div class="row">
-            <div class="col-4 text-center card home-card">
+            <div class="col-4 offset-1 text-center card home-card">
                 <br>
                 <h3>submit your contact request</h3>
                 <form action="" method="post">
@@ -28,16 +28,29 @@
                 <br>
             </div>
             <div class="col-4 offset-2 text-center card home-card">
-                <div class="rounded" id='map' style='width: 400px; height: 300px;'></div>
+                <div class="text-center">
+                    <h1>where we are:</h1>
+                </div>
+                <div class="rounded" id='map' style='width: available; height: 400px;'></div>
                 <script>
                     mapboxgl.accessToken = '{{ map_access_token }}';
                     const map = new mapboxgl.Map({
                         container: 'map',
                         style: 'mapbox://styles/mapbox/streets-v11',
-                        center:[55.8434723,-4.4263123],
-                        zoom: 9
+                        center: [-4.425278, 55.843350],
+                        zoom: 15
                     });
+                    const marker = new mapboxgl.Marker()
+                        .setLngLat([-4.425278, 55.843350])
+                        .addTo(map);
                 </script>
+                <br>
+                <div class="address">
+                    <h2>Voice technologies</h2>
+                    <h3>10 shuttle street</h3>
+                    <h3>Paisley</h3>
+                    <h3>PA1 1YD</h3>
+                </div>
             </div>
         </div>
     </div>
