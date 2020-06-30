@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load bootstrap_tags %}
+{% block head_mapbox %}
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet'/>
+{% endblock %}
 {% block header %}
     <div class="container-fluid section-container header-container">
-    <div class="row title-row align-items-center cart-title">
+        <div class="row title-row align-items-center cart-title">
             <div class="col-12 title-col">
                 <h1 class="page-title"><u> Contact us <i class="fas fa-envelope logo"></i></u></h1>
             </div>
@@ -13,7 +17,7 @@
 {% block content %}
     <div class="container-fluid contact-container">
         <div class="row">
-            <div class="col-4 offset-1 contact-card card home-card text-center">
+            <div class="col-4 text-center card home-card">
                 <br>
                 <h3>submit your contact request</h3>
                 <form action="" method="post">
@@ -23,8 +27,17 @@
                 </form>
                 <br>
             </div>
-            <div class="col-4 offset-2 contact-card card home-card text-center">
-
+            <div class="col-4 offset-2 text-center card home-card">
+                <div class="rounded" id='map' style='width: 400px; height: 300px;'></div>
+                <script>
+                    mapboxgl.accessToken = '{{ map_access_token }}';
+                    const map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/mapbox/streets-v11',
+                        center:[55.8434723,-4.4263123],
+                        zoom: 9
+                    });
+                </script>
             </div>
         </div>
     </div>

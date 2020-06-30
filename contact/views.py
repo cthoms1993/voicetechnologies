@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.contrib import messages
@@ -20,4 +21,4 @@ def contact(request):
             return redirect('contact')
     else:
         c = ContactForm()
-    return render(request, 'contact.html', {'form': c})
+    return render(request, 'contact.html', {'form': c, "map_access_token": settings.MAP_ACCESS_TOKEN})
