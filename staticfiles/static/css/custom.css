@@ -14,6 +14,11 @@ html, body {
 .navbar-brand {
 }
 
+.btn-vt{
+    background-color: #ff8200;
+    color: white;
+}
+
 .img-container {
     background-image: url("/media/images/VTheader.png");
     background-position: center, center;
