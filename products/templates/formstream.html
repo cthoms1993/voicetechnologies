@@ -31,54 +31,60 @@
 
 {% block lower %}
     <div class="container-fluid formstream-container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="embed-responsive embed-responsive-16by9 my-3 rounded video">
+        <div class="row text-center">
+            <div class="col-6 offset-3 ">
+                <div class="embed-responsive embed-responsive-16by9 my-3 rounded video home-card">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/5L6cHNE5fcc" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12  align-items-center">
-                    <h1><u>Key features:</u></h1>
-                    <ul>
-                        <li>Integrates with national IT systems including SCI-Store, Electronic Data Transfer (EDT) and
-                            clinical
-                            portals.
-                        </li>
-                        <li>Forms are auto-populated from demographic information using data from the patient admin
-                            system.
-                            Option to save e-Forms as draft and amend later.
-                        </li>
-                        <li>e-Forms can be created or updated anywhere using a tablet or mobile, synchronised on return
-                            to
-                            the
-                            clinic, and uploaded to the Electronic Patient Record (EPR).
-                        </li>
-                        <li>Fully encrypted data.</li>
-                        <li>
-                            Supported across mobile and web platforms via web browsers or device running Windows 7, 8 or
-                            10.
-                        </li>
-                    </ul>
-                    <h1><u>Key benefits:</u></h1>
-                    <ul>
-                        <li>No client install required.</li>
-                        <li>Data security guaranteed.</li>
-                        <li> Patient information up-to-date and shared instantly.</li>
-                        <li>No need for hard copies, saving £0.63+ per document (source: NHS Tayside, 2014).</li>
-                        <li> Patient data readily accessible for analysis and reporting.</li>
-                        <li>Authorised users can access colleagues’ completed forms post-verification.</li>
-                        <li>Documents shared across service boundaries to support patient care.</li>
-                    </ul>
-                </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="card home-card">
+                <h1><u>Key features:</u></h1>
+                <ul>
+                    <li>Integrates with national IT systems including SCI-Store, Electronic Data Transfer (EDT) and
+                        clinical
+                        portals.
+                    </li>
+                    <li>Forms are auto-populated from demographic information using data from the patient admin
+                        system.
+                        Option to save e-Forms as draft and amend later.
+                    </li>
+                    <li>e-Forms can be created or updated anywhere using a tablet or mobile, synchronised on return
+                        to
+                        the
+                        clinic, and uploaded to the Electronic Patient Record (EPR).
+                    </li>
+                    <li>Fully encrypted data.</li>
+                    <li>
+                        Supported across mobile and web platforms via web browsers or device running Windows 7, 8 or
+                        10.
+                    </li>
+                </ul>
+            </div>
+            <div class="card home-card">
+                <h1><u>Key benefits:</u></h1>
+                <ul>
+                    <li>No client install required.</li>
+                    <li>Data security guaranteed.</li>
+                    <li> Patient information up-to-date and shared instantly.</li>
+                    <li>No need for hard copies, saving £0.63+ per document (source: NHS Tayside, 2014).</li>
+                    <li> Patient data readily accessible for analysis and reporting.</li>
+                    <li>Authorised users can access colleagues’ completed forms post-verification.</li>
+                    <li>Documents shared across service boundaries to support patient care.</li>
+                </ul>
             </div>
         </div>
-        <div>
-            <a class="nav-link" href="{% url 'products' %}">
-                <button type="button" class="btn btn-warning">visit our store to purchase</button>
-            </a>
+        <br>
+        <div class="row">
+            <div class="col-12 text-center">
+                <a class="nav-link" href="{% url 'products' %}">
+                    <button type="button" class="btn btn-warning">visit our store to purchase</button>
+                </a>
+            </div>
         </div>
     </div>
 {% endblock %}

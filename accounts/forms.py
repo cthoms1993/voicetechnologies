@@ -4,35 +4,86 @@ from django.contrib.auth.forms import UserCreationForm
 from django.core.exceptions import ValidationError
 
 
-class UserLoginForm(forms.Form):
-    username = forms.CharField(required=True, label='', widget=forms.TextInput(attrs={'placeholder': 'Enter Username'}))
-    password = forms.CharField(required=True, label='', widget=forms.PasswordInput(
-        attrs={'class': 'form-control', 'placeholder': 'Enter Password'}))
-
-
 class UserRegistrationForm(UserCreationForm):
-    password1 = forms.CharField(label="Password", widget=forms.PasswordInput)
-    password2 = forms.CharField(label="Password Confirmation", widget=forms.PasswordInput)
+    username = forms.CharField(
+        required=True,
+        label='',
+        widget=forms.TextInput(attrs={
+            'class': 'form-control',
+            'placeholder': 'Enter Username'
+        })
+    )
+    email = forms.EmailField(
+        required=True,
+        label='',
+        widget=forms.EmailInput(attrs={
+            'class': 'form-control',
+            'placeholder': 'Enter Email'
+        })
+    )
+    password1 = forms.CharField(
+        required=True,
+        label='',
+        widget=forms.PasswordInput(attrs={
+            'class': 'form-control',
+            'placeholder': 'Enter Password'
+        })
+    )
+    password2 = forms.CharField(
+        required=True,
+        label='',
+        widget=forms.PasswordInput(attrs={
+            'class': 'form-control',
+            'placeholder': 'Re-Enter Password'
+        })
+    )
 
     class Meta:
         model = User
-        fields = ['email', 'username', 'password1', 'password2']
+        fields = [
+            'username',
+            'email',
+            'password1',
+            'password2'
+        ]
 
     def clean_email(self):
         email = self.cleaned_data.get('email')
-        username = self.cleaned_data.get('username')
-        if User.objects.filter(email=email).exclude(username=username):
-            raise forms.ValidationError('Email address must be unique')
+
+        if User.objects.filter(email=email).exists():
+            raise ValidationError("This email is already coupled to an "
+                                  "account.")
         return email
 
-    def clean_password2(self):
-        password1 = self.cleaned_data.get('password1')
-        password2 = self.cleaned_data.get('password2')
+    """Disable help text of UserCreationForm (answer got from: 
+    'https://stackoverflow.com/questions/13202845/removing-help-text-from-django-usercreateform'
+    & set default autofocus to first_name instead of the default field of 
+    username. """
 
-        if not password1 or not password2:
-            raise ValidationError("Please confirm your password")
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for fieldname in ['username', 'password1', 'password2']:
+            self.fields[fieldname].help_text = None
+        self.fields['username'].widget.attrs['autofocus'] = False
 
-        if password1 != password2:
-            raise ValidationError("Passwords must match")
 
-        return password2
+class UserLoginForm(forms.Form):
+    """User login form with html attributes set via widgets handlers
+    for same."""
+    username = forms.CharField(
+        required=True,
+        label='',
+        widget=forms.TextInput(attrs={
+            'class': 'form-control',
+            'placeholder': 'Enter Username',
+            'autofocus': 'True'
+        })
+    )
+    password = forms.CharField(
+        required=True,
+        label='',
+        widget=forms.PasswordInput(attrs={
+            'class': 'form-control',
+            'placeholder': 'Enter Password'
+        })
+    )

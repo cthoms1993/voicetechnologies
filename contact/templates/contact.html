@@ -17,21 +17,20 @@
 {% block content %}
     <div class="container-fluid contact-container">
         <div class="row">
-            <div class="col-4 offset-1 text-center card home-card">
+            <div class="col-4 offset-1 card home-card">
                 <br>
                 <h3>submit your contact request</h3>
-                <form action="" method="post">
-                    {% csrf_token %}
-                    {{ form | as_bootstrap }}
-                    <button type="submit" class="btn btn-warning" value="submit">Submit contact Request</button>
-                </form>
+                <div class="form-group">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        {{ form | as_bootstrap }}
+                        <button type="submit" class="btn btn-warning" value="submit">Submit contact Request</button>
+                    </form>
+                </div>
                 <br>
             </div>
             <div class="col-4 offset-2 text-center card home-card">
-                <div class="text-center">
-                    <h1>where we are:</h1>
-                </div>
-                <div class="rounded" id='map' style='width: available; height: 400px;'></div>
+                <div class="rounded" id='map' style='width: available; height: 400px; margin-top: 20px;'></div>
                 <script>
                     mapboxgl.accessToken = '{{ map_access_token }}';
                     const map = new mapboxgl.Map({
@@ -40,7 +39,7 @@
                         center: [-4.425278, 55.843350],
                         zoom: 15
                     });
-                    const marker = new mapboxgl.Marker()
+                    const marker = new mapboxgl.Marker({color: '#562b5e'})
                         .setLngLat([-4.425278, 55.843350])
                         .addTo(map);
                 </script>

@@ -14,41 +14,43 @@
     <div class="container-fluid about-title-container middle-container">
         <div class="row">
             <div class="col col-12 text-center">
-                <h1>About us</h1>
-                <h4>
+                <h3>
                     Voice Technologies is an award-winning, employee-owned software provider based in Paisley (near
                     Glasgow)
                     and Sheffield in the UK. We help organisations to reduce the time and cost of producing
                     correspondence
-                    by using information and mobile workflow, speech recognition and digital dictation applications.
+                    by using information and mobile workflow, speech recognition and digital dictation
+                    applications.</h3>
 
-                    Customer-focus is at the heart of everything we do. We are a trusted partner to our clients in the
+                <h4>Customer-focus is at the heart of everything we do. We are a trusted partner to our clients in the
                     public and private sectors, working closely with them to understand the issues they face and
                     creating
                     efficient ways of working that make a positive contribution to their financial and organisational
-                    efficiency.
+                    efficiency.</h4>
 
-                    Our team of in-house specialists develops innovative software including the award-winning
+                <h4> Our team of in-house specialists develops innovative software including the award-winning
                     WinVoicePro, a
                     document creation and workflow management application, and FormStream, web-based e-forms for
                     paperless
-                    documentation.
-
-                    We provide products and applications with industry-leading partner companies including Philips,
-                    Olympus
-                    and Nuance, and we are a Microsoft Silver Application Developer.</h4>
+                    documentation.</h4>
             </div>
         </div>
     </div>
 {% endblock %}
 {% block lower %}
     <div class="container-fluid staff-container">
+        <div class="intro-row">
+            <div class="col-12 text-center">
+                <h1>Meet Our Staff:</h1>
+            </div>
+        </div>
         <div class="row">
             {% for staff_member in staff_members %}
                 <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
                     <div class="card mb-3 home-card staff-card">
                         <div class="card-body">
-                            <img class="product rounded-circle" src="{{ staff_member.image.url }}" alt="{{ staff_member.name }}">
+                            <img class="product rounded-circle" src="{{ staff_member.image.url }}"
+                                 alt="{{ staff_member.name }}">
                             <h2 class="card-title">{{ staff_member.name }}</h2>
                             <h3 class="card-subtitle">{{ staff_member.title }}</h3>
                         </div>
