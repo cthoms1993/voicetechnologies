@@ -45,6 +45,7 @@ html, body {
 .middle-container {
     color: #fff;
     background-color: #562b5e;
+    padding-bottom: 20px;
 
 }
 
@@ -163,18 +164,20 @@ caption p {
     text-align: center;
 }
 
-.form-sub{
+.prod-sub{
     color: #ff8200;
 }
 
-.divider{
-  border-radius: 25px;
-  background: #ff8200;
-  padding: 20px;
-  width: 500px;
-  height: 3px;
+hr.rounded{
+    width: 500px;
+    height: 1px;
+    background-color: #ff8200;
 }
 
+.winimage{
+    height: 200px;
+    width: 200px;
+}
 .social-icons {
     padding: 0;
     list-style: none;
