@@ -7,6 +7,8 @@ html, body {
 
 }
 
+
+
 .navbar {
     background-color: #562b5e;
 }
@@ -14,7 +16,7 @@ html, body {
 .navbar-brand {
 }
 
-.btn-vt{
+.btn-vt {
     background-color: #ff8200;
     color: white;
 }
@@ -159,6 +161,18 @@ caption p {
     width: 400px;
     margin: 40vh auto;
     text-align: center;
+}
+
+.form-sub{
+    color: #ff8200;
+}
+
+.divider{
+  border-radius: 25px;
+  background: #ff8200;
+  padding: 20px;
+  width: 500px;
+  height: 3px;
 }
 
 .social-icons {
