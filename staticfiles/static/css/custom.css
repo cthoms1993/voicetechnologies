@@ -21,6 +21,10 @@ html, body {
     color: white;
 }
 
+.orange{
+    color: #ff8200;
+}
+
 .img-container {
     background-image: url("/media/images/VTheader.png");
     background-position: center, center;

@@ -4,7 +4,11 @@
 
 {% block header %}
     <div class="container-fluid section-container header-container">
-
+        <div class="row title-row align-items-center cart-title">
+            <div class="col-12 title-col">
+                <h1 class="page-title">FormStream <i class="fas fa-file logo"></i></h1>
+            </div>
+        </div>
         <h2 class="prod-sub">Capture, edit and share data while eliminating duplication, reducing time and lowering
             costs</h2>
     </div>
@@ -14,7 +18,7 @@
     <div class="container-fluid  middle-container info-container">
         <div class="row main-title-row justify-content-around">
             <div class="col-6 text-center">
-                <h1 class="info-title">Making paper form a thing of the past.</h1>
+                <h1>Making paper form a thing of the past.</h1>
                 <hr class="rounded">
                 <h2>FormStream is our web-based e-Forms (electronic forms) application. It supports the drive to make
                     paper forms obsolete by enabling you to populate, save, process and upload forms in one move.</h2>
@@ -46,8 +50,9 @@
         </div>
         <br>
         <div class="row justify-content-center">
-            <div class=" col-6">
-                <h1><u>Key features:</u></h1>
+            <div class=" col-6 text-centre">
+                <h1>Key features:</h1>
+                <hr  class="rounded">
                 <ul>
                     <li>Integrates with national IT systems including SCI-Store, Electronic Data Transfer (EDT) and
                         clinical
@@ -72,7 +77,8 @@
         </div>
         <div class="row justify-content-center">
             <div class=" col-6">
-                <h1><u>Key benefits:</u></h1>
+                <h1>Key benefits:</h1>
+                <hr  class="rounded">
                 <ul>
                     <li>No client install required.</li>
                     <li>Data security guaranteed.</li>
@@ -87,8 +93,8 @@
         <br>
         <div class="row">
             <div class="col-12 text-center">
-                <a class="nav-link" href="{% url 'products' %}">
-                    <button type="button" class="btn btn-vt">visit our store to purchase</button>
+                <a class="link-button" href="{% url 'products' %}">
+                    <button type="button" class="btn btn-vt">visit the store to purchase</button>
                 </a>
             </div>
         </div>
