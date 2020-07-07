@@ -12,27 +12,29 @@
 {% endblock %}
 {% block content %}
     <div class="container-fluid about-title-container middle-container">
-        <div class="row">
-            <div class="col col-12 text-center">
-                <h3>
+        <div class="row justify-content-around">
+            <div class="col col-6 text-center">
+                <h1>
                     Voice Technologies is an award-winning, employee-owned software provider based in Paisley (near
                     Glasgow)
                     and Sheffield in the UK. We help organisations to reduce the time and cost of producing
                     correspondence
                     by using information and mobile workflow, speech recognition and digital dictation
-                    applications.</h3>
+                    applications.</h1>
+                <hr class="rounded">
 
-                <h4>Customer-focus is at the heart of everything we do. We are a trusted partner to our clients in the
+                <h2>Customer-focus is at the heart of everything we do. We are a trusted partner to our clients in the
                     public and private sectors, working closely with them to understand the issues they face and
                     creating
                     efficient ways of working that make a positive contribution to their financial and organisational
-                    efficiency.</h4>
+                    efficiency.</h2>
+                <hr class="rounded">
 
-                <h4> Our team of in-house specialists develops innovative software including the award-winning
+                <h3> Our team of in-house specialists develops innovative software including the award-winning
                     WinVoicePro, a
                     document creation and workflow management application, and FormStream, web-based e-forms for
                     paperless
-                    documentation.</h4>
+                    documentation.</h3>
             </div>
         </div>
     </div>
@@ -48,14 +50,15 @@
             {% for staff_member in staff_members %}
                 <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
                     <div class="card mb-3 home-card staff-card">
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <img class="product rounded-circle" src="{{ staff_member.image.url }}"
                                  alt="{{ staff_member.name }}">
                             <h2 class="card-title">{{ staff_member.name }}</h2>
                             <h3 class="card-subtitle">{{ staff_member.title }}</h3>
+                            <hr class="rounded">
                         </div>
-                        <div class="card-body">
-                            <h6 class="card-text">{{ staff_member.description }}</h6>
+                        <div class="card-body text-center">
+                            <h5 class="card-text">{{ staff_member.description }}</h5>
                         </div>
                     </div>
                 </div>
