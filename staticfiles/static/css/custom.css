@@ -8,7 +8,6 @@ html, body {
 }
 
 
-
 .navbar {
     background-color: #562b5e;
 }
@@ -21,7 +20,7 @@ html, body {
     color: white;
 }
 
-.orange{
+.orange {
     color: #ff8200;
 }
 
@@ -53,8 +52,12 @@ html, body {
 
 }
 
+.products-container{
+    padding-top: 20px;
+}
 .cart-container {
     color: #fff;
+    padding-top: 50px;
 }
 
 .staff-container {
@@ -149,9 +152,20 @@ caption p {
     height: 500px;
 }
 
-
 .product-card {
     height: 500px;
+}
+
+.input-group {
+    padding-bottom: 20px;
+}
+
+.add-body {
+    padding-bottom: 20px;
+}
+
+input {
+    color: white;
 }
 
 .contact-card {
@@ -169,20 +183,21 @@ caption p {
     text-align: center;
 }
 
-.prod-sub{
+.prod-sub {
     color: #ff8200;
 }
 
-hr.rounded{
+hr.rounded {
     width: 500px;
     height: 1px;
     background-color: #ff8200;
 }
 
-.winimage{
+.winimage {
     height: 200px;
     width: 200px;
 }
+
 .social-icons {
     padding: 0;
     list-style: none;
