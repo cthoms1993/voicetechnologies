@@ -16,15 +16,19 @@
 {% endblock %}
 {% block content %}
     <div class="container-fluid contact-container">
-        <div class="row">
+        <div class="row contact-row">
             <div class="col-4 offset-1 card home-card">
-                <br>
-                <h3>submit your contact request</h3>
+                <div class="row contact-title">
+                    <div class="col-12 text-center">
+                        <h1>Submit your contact request</h1>
+                        <hr class="rounded">
+                    </div>
+                </div>
                 <div class="form-group">
                     <form action="" method="post">
                         {% csrf_token %}
                         {{ form | as_bootstrap }}
-                        <button type="submit" class="btn btn-warning" value="submit">Submit contact Request</button>
+                        <button type="submit" class="btn btn-vt" value="submit">Submit contact Request</button>
                     </form>
                 </div>
                 <br>
@@ -49,6 +53,7 @@
                     <h3>10 shuttle street</h3>
                     <h3>Paisley</h3>
                     <h3>PA1 1YD</h3>
+                    <hr class="rounded">
                 </div>
             </div>
         </div>

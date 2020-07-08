@@ -12,20 +12,19 @@
 {% endblock %}
 
 {% block content %}
-    <div class="col-sm-10 col-md-9">
-        {% if post.image %}
-            <img class="img-blogpost product" src="/media/{{ post.image }}" alt="{{ post.title }}">
-        {% endif %}
-        <h3>{{ post.title }}</h3>
-        <div class="row">
-            <div class="col-xs-9">
-                <p>{{ post.content }}</p>
-                <p><span class="boldtext">Published on:</span> {{ post.published_date }} </p>
-                <p><span class="boldtext">Views:</span> {{ post.views }}</p>
-                <p><span class="boldtext">Tag:</span> {{ post.tag }}</p>
-                <a href="{% url 'get_posts' %}" class="btn btn-default">Back to Blog</a>
-                <hr>
-                <h2>{{ comments.count }}</h2>
+    <div class="container-fluid blog-container">
+        <div class="row blog-row justify-content-around">
+            <div class="col-8 col-xs-3 card home-card">
+                {% if post.image %}
+                    <img class="img-blogpost rounded-circle product" src="/media/{{ post.image }}"
+                         alt="{{ post.title }}">
+                {% endif %}
+                <h2>{{ post.content }}</h2>
+                <h3><span class="boldtext">Published on:</span> {{ post.published_date }} </h3>
+                <h3><span class="boldtext">Views:</span> {{ post.views }}</h3>
+                <h4><a href="{% url 'get_posts' %}" class="btn btn-lg btn-vt">Back to Blog</a></h4>
+                <hr class="rounded">
+                <h2>Total comments: {{ comments.count }}</h2>
                 {% for comment in comments %}
                     <div class="comments" style="padding: 10px;">
                         <p class="font-weight-bold">
@@ -37,7 +36,6 @@
                         {{ comment.body | linebreaks }}
                     </div>
                 {% endfor %}
-                <hr>
                 <div class="card-body">
                     {% if new_comment %}
                         <div class="alert alert-success" role="alert">
@@ -48,7 +46,7 @@
                         <form method="post" style="margin-top: 1.3em;">
                             {{ comment_form | as_bootstrap }}
                             {% csrf_token %}
-                            <button type="submit" class="btn btn-primary btn-lg">Submit comment</button>
+                            <button type="submit" class="btn btn-vt btn-lg">Submit comment</button>
                         </form>
                     {% endif %}
                 </div>
