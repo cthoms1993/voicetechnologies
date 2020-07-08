@@ -9,6 +9,7 @@
                 <h1 class="page-title">Sign up <i class="fas fa-user-plus logo"></i></h1>
             </div>
         </div>
+        <h2 class="prod-sub">Register your account to make purchases in the store.</h2>
     </div>
 {% endblock %}
 
@@ -16,10 +17,10 @@
     <div class="container-fluid login-container">
         <div class="row signin-row justify-content-center">
             <div class="col-6 text-center signin-col card signin-card home-card">
-                <form method="POST">
+                <form class="reg-form" method="POST">
                     {% csrf_token %}
                     {{ registration_form | as_bootstrap }}
-                    <button type="submit" class="btn btn-vt">Register your profile</button>
+                    <button type="submit" class="btn  btn-lg btn-vt">Register your profile</button>
                 </form>
                 <br>
                 <h3>If you already have an account - <a href="{% url 'login' %}">sign in here</a></h3>
