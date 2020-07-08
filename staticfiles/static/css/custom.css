@@ -10,9 +10,19 @@ html, body {
 
 .navbar {
     background-color: #562b5e;
+    font-size: 1.5em;
 }
 
-.navbar-brand {
+.navbar .navbar-nav .nav-link:hover {
+    color: #ff8200;
+}
+
+.dropdown-menu {
+    background-color: #562b5e;
+}
+
+.dropdown-item {
+    color: white;
 }
 
 .btn-vt {
@@ -73,9 +83,9 @@ html, body {
     padding-top: 30px;
 }
 
-.blog-container{
+.blog-container {
     padding-top: 40px;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -295,11 +305,11 @@ footer {
     font-size: 20px;
 }
 
-.img-blogpost{
+.img-blogpost {
     margin-bottom: 20px;
 }
 
-.contact-row{
+.contact-row {
     margin-top: 30px;
 }
 
@@ -307,6 +317,3 @@ footer {
     margin-top: 10px;
 }
 
-.nav-item {
-    font-size: 130px;
-}

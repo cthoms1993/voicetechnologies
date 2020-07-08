@@ -39,15 +39,14 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                    aria-expanded="false">Products</a>
-                <div class="dropdown-menu" style="">
+                <div class="dropdown-menu text-white">
                     <a class="dropdown-item" href="{% url 'formstream' %}">Formstream</a>
                     <a class="dropdown-item" href="{% url 'winvoicepro' %}">Winvoice Pro</a>
                     <a class="dropdown-item" href="{% url 'winvoiceweb' %}">Winvoice web</a>
-                    <div class="dropdown-divider"></div>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'view_cart' %}"><i class="fas fa-shopping-cart"></i>Cart
+                <a class="nav-link" href="{% url 'view_cart' %}">Cart<i class="fas fa-shopping-cart"></i>
                     {% if product_count > 0 %}
                         <label class="badge badge-warning">{{ product_count }}</label>
                     {% endif %}
