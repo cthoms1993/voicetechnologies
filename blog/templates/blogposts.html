@@ -1,33 +1,27 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block header %}
- <div class="container-fluid section-container header-container">
- <div class="row title-row align-items-center cart-title">
+    <div class="container-fluid section-container header-container">
+        <div class="row title-row align-items-center cart-title">
             <div class="col-12 title-col">
-                <h1 class="page-title"><u>Blog <i class="fas fa-comment logo"></i></u></h1>
+                <h1 class="page-title">Blog <i class="fas fa-comment logo"></i></h1>
             </div>
         </div>
-</div>
+    </div>
 {% endblock %}
 {% block content %}
-    <div class="container">
-        {% for post in posts %}
-            <div class="row">
-                <div class="col-md-10 col-sm-9">
-                    <div class="row">
-                        <img class="post-image product" src="{{ post.image.url }}" alt="{{ post.name }}">
-                        <h3>{{ post.title }}</h3>
-                        <div class="col-xs-9">
-                            <p>{{ post.content|truncatewords:30 }}</p>
-                            <p><a href="{% url 'post_detail' post.id %}" class="btn btn-primary">Read more</a></p>
-                            <p><span class="boldtext">Published on:</span> {{ post.published_date }} </p>
-                            <p><span class="boldtext">Views:</span> {{ post.views }}</p>
-                            <p><span class="boldtext">Tag:</span> {{ post.tag }}</p>
-                        </div>
-                    </div>
+    {% for post in posts %}
+        <div class="container blog-container cars home-card">
+            <div class="row blog-row justify-content-around">
+                <div class="col-8">
+                    <h1>{{ post.title }}</h1>
+                    <p>{{ post.content|truncatewords:30 }}</p>
+                    <p><a href="{% url 'post_detail' post.id %}" class="btn btn-vt">Read more</a></p>
+                    <p><span class="boldtext">Published on:</span> {{ post.published_date }} </p>
+                    <p><span class="boldtext">Views:</span> {{ post.views }}</p>
+                    <hr class="rounded">
                 </div>
-                <hr>
             </div>
-        {% endfor %}
-    </div>
+        </div>
+    {% endfor %}
 {% endblock %}

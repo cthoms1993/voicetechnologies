@@ -51,7 +51,7 @@ class UserRegistrationForm(UserCreationForm):
         email = self.cleaned_data.get('email')
 
         if User.objects.filter(email=email).exists():
-            raise ValidationError("This email is already coupled to an "
+            raise ValidationError("This email is already registered to an"
                                   "account.")
         return email
 
@@ -63,14 +63,14 @@ class UserRegistrationForm(UserCreationForm):
 
 
 class UserLoginForm(forms.Form):
-
     username = forms.CharField(
         required=True,
         label='',
         widget=forms.TextInput(attrs={
-            'class': 'form-control',
+            'class': 'form-control' 'text-color',
             'placeholder': 'Enter Username',
-            'autofocus': 'True'
+            'autofocus': 'True',
+
         })
     )
     password = forms.CharField(
@@ -78,6 +78,8 @@ class UserLoginForm(forms.Form):
         label='',
         widget=forms.PasswordInput(attrs={
             'class': 'form-control',
-            'placeholder': 'Enter Password'
+            'placeholder': 'Enter Password',
+            'color': 'white'
+
         })
     )

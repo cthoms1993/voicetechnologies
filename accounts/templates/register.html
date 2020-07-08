@@ -6,7 +6,7 @@
     <div class="container-fluid section-container header-container">
         <div class="row title-row align-items-center">
             <div class="col-12 title-col">
-                <h1 class="page-title"><u>Sign up <i class="fas fa-user-plus logo"></i></u></h1>
+                <h1 class="page-title">Sign up <i class="fas fa-user-plus logo"></i></h1>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
                 <form method="POST">
                     {% csrf_token %}
                     {{ registration_form | as_bootstrap }}
-                    <button type="submit" class="btn btn-warning">Register your profile</button>
+                    <button type="submit" class="btn btn-vt">Register your profile</button>
                 </form>
                 <br>
                 <h3>If you already have an account - <a href="{% url 'login' %}">sign in here</a></h3>
