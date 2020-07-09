@@ -8,11 +8,6 @@ html, body {
 }
 
 
-.navbar {
-    background-color: #562b5e;
-    font-size: 1em;
-}
-
 .navbar .navbar-nav .nav-link:hover {
     color: #ff8200;
 
@@ -36,7 +31,7 @@ html, body {
     color: #ff8200;
 }
 
-#link {
+#link{
     color: #ff8200;
 }
 
