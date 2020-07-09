@@ -21,24 +21,26 @@
 
 {% block lower %}
     <div class="container-fluid home-lower-container">
-        <div class="row">
-            <div class="col col-4 text-center">
-                <div class="card mb-3 home-card">
+        <div class="row row-flex">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 text-center">
+                <div class="card mb-3 about-card home-card">
                     <h1 class="card-header">
                         About us
                         <hr class="rounded">
                     </h1>
                     <div class="card-body">
                         <h3 class="card-text">Voice Technologies is an award-winning, employee-owned software provider.
+                            We help organisations to reduce the time and cost of producing correspondence by using
+                            information and mobile workflow, speech recognition and digital dictation applications.
                         </h3>
                     </div>
                     <div class="card-body">
-                        <a href="{% url 'staff' %}" class="card-link btn btn-lg btn-vt">Read more</a>
+                        <a href="{% url 'staff' %}" id="link" class="card-link "><h1>Read more</h1></a>
                     </div>
                 </div>
             </div>
-            <div class="col col-4 text-center">
-                <div class="card main-card home-card">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 text-center">
+                <div class="card mb-3 about-card home-card">
                     <h1 class="card-header">Products
                         <hr class="rounded">
                     </h1>
@@ -47,14 +49,19 @@
                             speeding up processes.</h3>
                     </div>
                     <div class="card-body">
-                        <a href="{% url 'formstream' %}" class="card-link btn-lg btn btn-vt">FormStream</a>
-                        <a href="{% url 'winvoicepro' %}" class="card-link btn-lg btn btn-vt">WinVoicePro</a>
-                        <a href="{% url 'winvoiceweb' %}" class="card-link btn-lg btn btn-vt">WinVoiceWeb</a>
+                        <a href="{% url 'formstream' %}" id="link" class="card-link">
+                            <h2>Formstream</h2></a>
+                        <a href="{% url 'winvoicepro' %}" id="link" class="card-link">
+                            <h2>WinVoicePro</h2>
+                        </a>
+                        <a href="{% url 'winvoiceweb' %}" id="link" class="card-link">
+                            <h2>WinVoiceWeb</h2>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col col-4 text-center">
-                <div class="card mb-3 home-card">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 text-center">
+                <div class="card mb-3 about-card home-card">
                     <h1 class="card-header">
                         Blog
                         <hr class="rounded">
@@ -64,7 +71,7 @@
                             team at voice technologies.</h3>
                     </div>
                     <div class="card-body">
-                        <a href="{% url 'get_posts' %}" class="card-link btn btn-lg btn-vt">see our latest posts</a>
+                        <a href="{% url 'get_posts' %}" id="link" class="card-link "><h1>See our latest posts</h1></a>
                     </div>
                 </div>
             </div>

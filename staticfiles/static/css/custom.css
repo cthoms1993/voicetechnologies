@@ -10,11 +10,12 @@ html, body {
 
 .navbar {
     background-color: #562b5e;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .navbar .navbar-nav .nav-link:hover {
     color: #ff8200;
+
 }
 
 .dropdown-menu {
@@ -25,6 +26,7 @@ html, body {
     color: white;
 }
 
+
 .btn-vt {
     background-color: #ff8200;
     color: white;
@@ -32,6 +34,23 @@ html, body {
 
 .orange {
     color: #ff8200;
+}
+
+#link {
+    color: #ff8200;
+}
+
+#link:hover{
+    color: white;
+}
+
+.about-card{
+    height: 450px;
+}
+
+.card-link{
+    padding-top: 0;
+    margin: 0;
 }
 
 .img-container {
@@ -205,7 +224,7 @@ input {
 }
 
 hr.rounded {
-    width: 500px;
+    width: 100px;
     height: 1px;
     background-color: #ff8200;
 }

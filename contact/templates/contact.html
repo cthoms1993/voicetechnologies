@@ -17,7 +17,7 @@
 {% block content %}
     <div class="container-fluid contact-container">
         <div class="row contact-row">
-            <div class="col-4 offset-1 card home-card">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 offset-1 card home-card">
                 <div class="row contact-title">
                     <div class="col-12 text-center">
                         <h1>Submit your contact request</h1>
@@ -33,7 +33,7 @@
                 </div>
                 <br>
             </div>
-            <div class="col-4 offset-2 text-center card home-card">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 offset-2 text-center card home-card">
                 <div class="rounded" id='map' style='width: available; height: 400px; margin-top: 20px;'></div>
                 <script>
                     mapboxgl.accessToken = '{{ map_access_token }}';
