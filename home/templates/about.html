@@ -50,15 +50,23 @@
             {% for staff_member in staff_members %}
                 <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
                     <div class="card mb-3 home-card staff-card">
-                        <div class="card-body text-center">
-                            <img class="product rounded-circle" src="{{ staff_member.image.url }}"
-                                 alt="{{ staff_member.name }}">
-                            <h2 class="card-title">{{ staff_member.name }}</h2>
-                            <h3 class="card-subtitle">{{ staff_member.title }}</h3>
-                            <hr class="rounded">
+                        <div class="row staff-title-row">
+                            <div class="col-12 text-center">
+                                <div class="card-body">
+                                    <img class="product rounded-circle" src="{{ staff_member.image.url }}"
+                                         alt="{{ staff_member.name }}">
+                                    <h2 class="card-title">{{ staff_member.name }}</h2>
+                                    <h3 class="card-subtitle">{{ staff_member.title }}</h3>
+                                    <hr class="rounded">
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body text-center">
-                            <h5 class="card-text">{{ staff_member.description }}</h5>
+                        <div class="row description-row">
+                            <div class="col-12 text-center">
+                                <div class="card-body">
+                                    <p class="card-text">{{ staff_member.description }}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

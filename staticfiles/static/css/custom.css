@@ -3,8 +3,13 @@ html, body {
     margin: 0;
     background-color: #562b5e;
     color: white;
+    height: auto;
     overflow-x: hidden;
 
+}
+
+.container {
+    margin-right: 0;
 }
 
 
@@ -31,19 +36,19 @@ html, body {
     color: #ff8200;
 }
 
-#link{
+#link {
     color: #ff8200;
 }
 
-#link:hover{
+#link:hover {
     color: white;
 }
 
-.about-card{
+.about-card {
     height: 450px;
 }
 
-.card-link{
+.card-link {
     padding-top: 0;
     margin: 0;
 }
@@ -87,6 +92,16 @@ html, body {
 
 .staff-container {
     padding-top: 50px;
+}
+
+.description-row {
+    padding-top:0;
+    margin-top: 0;
+}
+
+.staff-title-row{
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .intro-row {
@@ -180,7 +195,7 @@ caption p {
 }
 
 .staff-card {
-    height: 500px;
+    height: 600px;
 }
 
 .product-card {
