@@ -348,47 +348,66 @@ footer {
 
 /*media queries*/
 @media (min-width: 320px) {
-    .header-container{
+    .header-container {
         height: 300px;
     }
+
     .page-title {
         font-size: 45px;
     }
-    .logo{
+
+    .logo {
         font-size: 40px;
     }
 
-    .winimage{
+    .winimage {
         height: 50px;
         width: 50px;
     }
 
-    .win-web-image{
+    .win-web-image {
         height: 80px;
         width: 300px;
     }
+
+    .prod-sub{
+        font-size: 15px;
+    }
 }
 
-@media (min-width: 575px){
-    .header-container{
+@media (min-width: 768px) {
+    .header-container {
         height: 400px;
     }
-    .page-title{
+
+    .page-title {
         font-size: 100px;
     }
 
-    .logo{
+    .logo {
         font-size: 80px;
     }
 
-    .winimage{
+    .winimage {
         height: 80px;
         width: 80px;
     }
 
+    .win-web-image {
+        height: 150px;
+        width: 500px;
+    }
+
+    .prod-sub{
+        font-size: 30px;
+    }
+
 }
 
-@media (min-width: 768px){
-
+@media (min-width:1000px) {
+    .win-web-image {
+        height: 200px;
+        width: 700px;
+    }
 
 }
