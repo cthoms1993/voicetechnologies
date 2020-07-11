@@ -402,12 +402,20 @@ footer {
         font-size: 30px;
     }
 
+    .description-row{
+        font-size: 8px;
+    }
+
 }
 
 @media (min-width:1000px) {
     .win-web-image {
         height: 200px;
         width: 700px;
+    }
+
+    .description-row{
+        font-size: 12px;
     }
 
 }
