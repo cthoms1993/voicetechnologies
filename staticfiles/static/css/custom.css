@@ -95,11 +95,11 @@ html, body {
 }
 
 .description-row {
-    padding-top:0;
+    padding-top: 0;
     margin-top: 0;
 }
 
-.staff-title-row{
+.staff-title-row {
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -240,8 +240,8 @@ hr.rounded {
 }
 
 .winimage {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
 
 .social-icons {
@@ -346,3 +346,49 @@ footer {
     margin-top: 10px;
 }
 
+/*media queries*/
+@media (min-width: 320px) {
+    .header-container{
+        height: 300px;
+    }
+    .page-title {
+        font-size: 45px;
+    }
+    .logo{
+        font-size: 40px;
+    }
+
+    .winimage{
+        height: 50px;
+        width: 50px;
+    }
+
+    .win-web-image{
+        height: 80px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 575px){
+    .header-container{
+        height: 400px;
+    }
+    .page-title{
+        font-size: 100px;
+    }
+
+    .logo{
+        font-size: 80px;
+    }
+
+    .winimage{
+        height: 80px;
+        width: 80px;
+    }
+
+}
+
+@media (min-width: 768px){
+
+
+}
