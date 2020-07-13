@@ -199,7 +199,7 @@ caption p {
 }
 
 .product-card {
-    height: 500px;
+    height: 600px;
 }
 
 .input-group {
@@ -352,6 +352,7 @@ footer {
         height: 300px;
     }
 
+
     .page-title {
         font-size: 45px;
     }
@@ -370,9 +371,11 @@ footer {
         width: 300px;
     }
 
-    .prod-sub{
+    .prod-sub {
         font-size: 15px;
     }
+
+
 }
 
 @media (min-width: 768px) {
@@ -398,23 +401,23 @@ footer {
         width: 500px;
     }
 
-    .prod-sub{
+    .prod-sub {
         font-size: 30px;
     }
 
-    .description-row{
+    .description-row {
         font-size: 8px;
     }
 
 }
 
-@media (min-width:1000px) {
+@media (min-width: 1000px) {
     .win-web-image {
-        height: 200px;
+        height: 150px;
         width: 700px;
     }
 
-    .description-row{
+    .description-row {
         font-size: 12px;
     }
 
