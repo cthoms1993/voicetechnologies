@@ -14,15 +14,15 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid login-container">
-        <div class="row signin-row justify-content-center">
-            <div class="col-6 text-center signin-col card signin-card home-card">
+    <div class="container-fluid register-container">
+        <div class="row signin-row justify-content-around">
+            <div class="col-10 col-lg-8 col-xl-6 signin-col card register-card home-card">
                 <form class="reg-form" method="POST">
                     {% csrf_token %}
                     {{ registration_form | as_bootstrap }}
                     <button type="submit" class="btn  btn-lg btn-vt">Register your profile</button>
                 </form>
-                <br>
+                <hr class="rounded">
                 <h3>If you already have an account - <a href="{% url 'login' %}">sign in here</a></h3>
             </div>
         </div>

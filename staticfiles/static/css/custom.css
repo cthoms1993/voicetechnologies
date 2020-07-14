@@ -27,6 +27,12 @@ html, body {
 }
 
 
+.logged-in-text{
+    color: #ff8200;
+    font-size: 20px;
+}
+
+
 .btn-vt {
     background-color: #ff8200;
     color: white;
@@ -102,6 +108,9 @@ html, body {
 .payment-container{
     padding-top: 30px;
 }
+.register-container{
+    margin-top: 20px;
+}
 .description-row {
     padding-top: 0;
     margin-top: 0;
@@ -125,6 +134,7 @@ html, body {
     margin-bottom: 20px;
 
 }
+
 
 .store-img {
     background-color: white;
@@ -228,6 +238,11 @@ input {
 
 .signin-card {
     height: 500px;
+}
+
+.register-card{
+    height: 600px;
+    padding-top: 20px;
 }
 
 

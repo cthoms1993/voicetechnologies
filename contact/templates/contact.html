@@ -16,24 +16,17 @@
 {% endblock %}
 {% block content %}
     <div class="container-fluid contact-container">
-        <div class="row contact-row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 offset-1 card home-card">
-                <div class="row contact-title">
-                    <div class="col-12 text-center">
-                        <h1>Submit your contact request</h1>
-                        <hr class="rounded">
-                    </div>
-                </div>
+        <div class="row contact-row justify-content-around">
+            <div class="col-10 col-lg-8 col-xl-6 home-card card">
+                <h1>Submit your contact request</h1>
+                <hr class="rounded">
                 <div class="form-group">
                     <form action="" method="post">
                         {% csrf_token %}
                         {{ form | as_bootstrap }}
-                        <button type="submit" class="btn btn-vt" value="submit">Submit contact Request</button>
+                        <button type="submit" class="btn  btn-vt" value="submit">Submit contact Request</button>
                     </form>
                 </div>
-                <br>
-            </div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 offset-2 text-center card home-card">
                 <div class="rounded" id='map' style='width: available; height: 400px; margin-top: 20px;'></div>
                 <script>
                     mapboxgl.accessToken = '{{ map_access_token }}';
@@ -47,13 +40,12 @@
                         .setLngLat([-4.425278, 55.843350])
                         .addTo(map);
                 </script>
-                <br>
+                <hr class="rounded">
                 <div class="address">
                     <h2>Voice technologies</h2>
                     <h3>10 shuttle street</h3>
                     <h3>Paisley</h3>
                     <h3>PA1 1YD</h3>
-                    <hr class="rounded">
                 </div>
             </div>
         </div>

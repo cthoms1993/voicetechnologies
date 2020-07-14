@@ -7,34 +7,30 @@ from django.core.exceptions import ValidationError
 class UserRegistrationForm(UserCreationForm):
     username = forms.CharField(
         required=True,
-        label='',
+        label='Username',
         widget=forms.TextInput(attrs={
             'class': 'form-control',
-            'placeholder': 'Enter Username'
         })
     )
     email = forms.EmailField(
         required=True,
-        label='',
+        label='Email',
         widget=forms.EmailInput(attrs={
             'class': 'form-control',
-            'placeholder': 'Enter Email'
         })
     )
     password1 = forms.CharField(
         required=True,
-        label='',
+        label='Enter Password',
         widget=forms.PasswordInput(attrs={
             'class': 'form-control',
-            'placeholder': 'Enter Password'
         })
     )
     password2 = forms.CharField(
         required=True,
-        label='',
+        label='Re-enter password',
         widget=forms.PasswordInput(attrs={
             'class': 'form-control',
-            'placeholder': 'Re-Enter Password'
         })
     )
 
@@ -65,21 +61,18 @@ class UserRegistrationForm(UserCreationForm):
 class UserLoginForm(forms.Form):
     username = forms.CharField(
         required=True,
-        label='',
+        label='Username:',
         widget=forms.TextInput(attrs={
-            'class': 'form-control' 'text-color',
-            'placeholder': 'Enter Username',
+            'class': 'form-control',
             'autofocus': 'True',
 
         })
     )
     password = forms.CharField(
         required=True,
-        label='',
+        label='Password:',
         widget=forms.PasswordInput(attrs={
             'class': 'form-control',
-            'placeholder': 'Enter Password',
-            'color': 'white'
 
         })
     )
