@@ -156,10 +156,10 @@ html, body {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
     margin: 0 auto;
     background-color: white;
+    width: 150px;
+    height: 150px;
 }
 
 caption p {
@@ -346,6 +346,14 @@ footer {
     margin-top: 10px;
 }
 
+.table-title {
+    background-color: #ff8200;
+}
+
+th {
+    font-size: 15px;
+}
+
 /*media queries*/
 @media (min-width: 320px) {
     .header-container {
@@ -375,8 +383,12 @@ footer {
         font-size: 15px;
     }
 
-
+    .cart-product {
+        width: 50px;
+        height: 50px;
+    }
 }
+
 
 @media (min-width: 768px) {
     .header-container {
@@ -407,6 +419,11 @@ footer {
 
     .description-row {
         font-size: 8px;
+    }
+
+    .cart-product {
+        width: 150px;
+        height: 150px;
     }
 
 }
