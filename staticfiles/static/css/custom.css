@@ -18,6 +18,9 @@ html, body {
 
 }
 
+.login-form{
+    margin-top: 5px;
+}
 .dropdown-menu {
     background-color: #562b5e;
 }
@@ -377,6 +380,9 @@ th {
     font-size: 15px;
 }
 
+.cart-image{
+    margin-top: 20px;
+}
 /*media queries*/
 @media (min-width: 320px) {
     .header-container {

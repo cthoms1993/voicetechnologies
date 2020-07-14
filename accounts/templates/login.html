@@ -11,17 +11,16 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid login-container">
+    <div class="container-fluid register-container login-container">
         <div class="row signin-row justify-content-center">
-            <div class="col-6 signin-col card signin-card home-card text-center">
-                <h1><i class="fas fa-user-lock"></i> Sign in</h1>
+            <div class="col-10 col-lg-8 col-xl-6 signin-col card signin-card home-card ">
                 <form class="login-form" method="POST">
                     {% csrf_token %}
                     {{ login_form | as_bootstrap }}
                     <button type="submit" class="btn btn-lg btn-vt">log in</button>
                 </form>
                 <br>
-                 <h3>If you dont have an account - <a href="{% url 'register' %}">Register here</a></h3>
+                 <h3>If you dont have an account - <a id="link" href="{% url 'register' %}">Register here</a></h3>
             </div>
         </div>
     </div>
