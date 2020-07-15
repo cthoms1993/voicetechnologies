@@ -12,6 +12,10 @@ html, body {
     margin-right: 0;
 }
 
+.form-control{
+    color: white;
+}
+
 .navbar-nav {
     font-size: 1.2em;
 }
@@ -189,6 +193,18 @@ html, body {
     height: 150px;
 }
 
+.blog-image{
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
 caption p {
     word-wrap: break-word;
 }
@@ -235,10 +251,6 @@ caption p {
 
 .add-body {
     padding-bottom: 20px;
-}
-
-input {
-    color: white;
 }
 
 .contact-card {
