@@ -26,12 +26,11 @@ from blog import urls as urls_blog
 from contact import urls as urls_contact
 from products import urls as urls_products
 from staff import urls as urls_staff
-from home.views import home, index
+from home.views import home
 
 urlpatterns = [
                   url(r'^admin/', admin.site.urls),
                   url(r'^$', home, name='home'),
-                  url(r'^index', index, name='index'),
                   url(r'^accounts/', include(urls_accounts)),
                   url(r'^products/', include(urls_products)),
                   url(r'^cart/', include(urls_cart)),
