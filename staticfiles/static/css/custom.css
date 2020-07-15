@@ -12,15 +12,19 @@ html, body {
     margin-right: 0;
 }
 
+.navbar-nav {
+    font-size: 1.2em;
+}
 
 .navbar .navbar-nav .nav-link:hover {
     color: #ff8200;
 
 }
 
-.login-form{
+.login-form {
     margin-top: 5px;
 }
+
 .dropdown-menu {
     background-color: #562b5e;
 }
@@ -30,7 +34,7 @@ html, body {
 }
 
 
-.logged-in-text{
+.logged-in-text {
     color: #ff8200;
     font-size: 20px;
 }
@@ -103,17 +107,19 @@ html, body {
     padding-top: 50px;
 }
 
-.checkout-container{
+.checkout-container {
     margin-top: 20px;
-   padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-.payment-container{
+.payment-container {
     padding-top: 30px;
 }
-.register-container{
+
+.register-container {
     margin-top: 20px;
 }
+
 .description-row {
     padding-top: 0;
     margin-top: 0;
@@ -243,7 +249,7 @@ input {
     height: 500px;
 }
 
-.register-card{
+.register-card {
     height: 600px;
     padding-top: 20px;
 }
@@ -380,9 +386,14 @@ th {
     font-size: 15px;
 }
 
-.cart-image{
+.cart-image {
     margin-top: 20px;
 }
+
+.about-text {
+    font-size: 20px;
+}
+
 /*media queries*/
 @media (min-width: 320px) {
     .header-container {
@@ -416,6 +427,7 @@ th {
         width: 50px;
         height: 50px;
     }
+
 }
 
 
@@ -466,5 +478,10 @@ th {
     .description-row {
         font-size: 12px;
     }
+
+    .product-card{
+        height: 300px;
+    }
+
 
 }

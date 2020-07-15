@@ -14,27 +14,36 @@
     <div class="container-fluid products-container">
         <div class="row justify-content-around">
             {% for product in products %}
-                <div class="col-10 col-lg-4">
+                <div class="col-10 col-lg-10 col-xl-8">
                     <div class="card mb-3 home-card product-card">
-                        <div class="cart-image product rounded-circle"
-                             style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">{{ product.description }}</p>
-                            <p class="card-text">£{{ product.price }} per user license</p>
-                        </div>
-                        <div class="card-body add-body">
-                            <form method="post" action="{% url 'add_to_cart' product.id %}">
-                                {% csrf_token %}
-                                <h4>Select quantity:
-                                    <input id="quantity" name="quantity" type="number" min="1" max="999"
-                                           value="1" class="form-control input-number text-white">
-                                </h4>
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="cart-image product rounded-circle"
+                                     style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
+                                </div>
+                            </div>
 
-                                <span class="input-group-btn">
-                                       <button class="btn btn-vt" type="submit">Add to cart</button>
+                            <div class="col-12 col-lg-4">
+                                <div class="card-body">
+                                    <p class="card-text">{{ product.description }}</p>
+                                    <p class="card-text">£{{ product.price }} per user license</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="card-body add-body">
+                                    <form method="post" action="{% url 'add_to_cart' product.id %}">
+                                        {% csrf_token %}
+                                        <h4>Select quantity:
+                                            <input id="quantity" name="quantity" type="number" min="1" max="999"
+                                                   value="1" class="form-control input-number text-white">
+                                        </h4>
+
+                                        <span class="input-group-btn">
+                                       <button class="btn btn-vt btn-sm" type="submit">Add to cart</button>
                                     </span>
-                            </form>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
