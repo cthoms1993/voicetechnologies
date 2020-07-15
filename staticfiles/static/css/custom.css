@@ -245,6 +245,10 @@ caption p {
     height: 600px;
 }
 
+.product-col{
+    padding-top: 30px;
+}
+
 .input-group {
     padding-bottom: 20px;
 }
