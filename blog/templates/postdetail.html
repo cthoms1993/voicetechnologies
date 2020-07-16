@@ -14,41 +14,60 @@
 {% block content %}
     <div class="container-fluid blog-container">
         <div class="row blog-row justify-content-around">
-            <div class="col-8 col-xs-3 card home-card">
-                {% if post.image %}
-                    <img class="img-blogpost rounded-circle product" src="/media/{{ post.image }}"
-                         alt="{{ post.title }}">
-                {% endif %}
-                <h2>{{ post.content }}</h2>
-                <h3><span class="boldtext">Published on:</span> {{ post.published_date }} </h3>
-                <h3><span class="boldtext">Views:</span> {{ post.views }}</h3>
-                <h4><a href="{% url 'get_posts' %}" class="btn btn-lg btn-vt">Back to Blog</a></h4>
-                <hr class="rounded">
-                <h2>Total comments: {{ comments.count }}</h2>
-                {% for comment in comments %}
-                    <div class="comments" style="padding: 10px;">
-                        <p class="font-weight-bold">
-                            {{ comment.name }}
-                            <span class="font-weight-normal">
+            <div class="col-12 col-md-8">
+                <div class="card home-card">
+                    <div class="row justify-content-around">
+                        {% if post.image %}
+                            <div class="col-10 col-lg-8 text-center">
+                                <div class="blog-image rounded-top rounded-bottom"
+                                     style="background-image: url('{{ MEDIA_URL }}{{ post.image }}')">
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="col-10 col-lg-8">
+                            <p>{{ post.content }}</p>
+                            <h4><span class="boldtext">Published on:</span> {{ post.published_date }} </h4>
+                            <h4><span class="boldtext">Views:</span> {{ post.views }}</h4>
+                            <h4><a href="{% url 'get_posts' %}" class="btn btn-sm btn-vt">Back to Blog</a></h4>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="col-10 col-lg-8">
+                            <hr class="rounded">
+                            <h4>Total comments: {{ comments.count }}</h4>
+                            {% for comment in comments %}
+                                <div class="comments">
+                                    <p class="font-weight-bold orange">
+                                        {{ comment.name }} -
+                                        <span class="font-weight-normal">
                                 {{ comment.created_on }}
                             </span>
-                        </p>
-                        {{ comment.body | linebreaks }}
-                    </div>
-                {% endfor %}
-                <div class="card-body">
-                    {% if new_comment %}
-                        <div class="alert alert-success" role="alert">
-                            <p>your comment is awaiting moderation<</p>
+                                    </p>
+                                    {{ comment.body| linebreaks}}
+                                </div>
+                            {% endfor %}
                         </div>
-                    {% else %}
-                        <h3> Leave a comment</h3>
-                        <form method="post" style="margin-top: 1.3em;">
-                            {{ comment_form | as_bootstrap }}
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-vt btn-lg">Submit comment</button>
-                        </form>
-                    {% endif %}
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="col-10 col-lg-8">
+                            <div class="card-body">
+                                {% if new_comment %}
+                                    <div class="alert" role="alert">
+                                        <p>your comment has been submitted</p>
+                                    </div>
+                                {% else %}
+                                    <h3> Leave a comment</h3>
+                                    <form method="post" style="margin-top: 1.3em;">
+                                        {{ comment_form | as_bootstrap }}
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-vt btn-sm">Submit comment</button>
+                                    </form>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

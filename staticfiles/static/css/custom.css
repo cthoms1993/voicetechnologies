@@ -205,6 +205,11 @@ html, body {
 
 }
 
+.blog-detail-image{
+    height:300px;
+    width: 300px;
+}
+
 caption p {
     word-wrap: break-word;
 }
@@ -373,10 +378,6 @@ footer {
     background-color: #562b5e;
 }
 
-
-.form-control::placeholder {
-    color: white;
-}
 
 .form-control {
     font-size: 20px;
