@@ -8,6 +8,9 @@ html, body {
 
 }
 
+nav{
+    height: 100px;
+}
 .container {
     margin-right: 0;
 }
@@ -16,8 +19,9 @@ html, body {
     color: white;
 }
 
-.navbar-nav {
-    font-size: 1.2em;
+.navbar-nav{
+    margin: 0;
+    padding: 0;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -25,6 +29,9 @@ html, body {
 
 }
 
+.nav-item{
+    font-size: 20px;
+}
 .login-form {
     margin-top: 5px;
 }
@@ -37,12 +44,10 @@ html, body {
     color: white;
 }
 
-
 .logged-in-text {
     color: #ff8200;
     font-size: 20px;
 }
-
 
 .btn-vt {
     background-color: #ff8200;
