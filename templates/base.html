@@ -43,10 +43,7 @@
                 <a class="nav-link" href="{% url 'products' %}">Store</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'get_posts' %}">blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+                <a class="nav-link" href="{% url 'get_posts' %}">Blog</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -88,11 +85,10 @@
 {% block header %}
 {% endblock %}
 
-<section class="content-section">
+
     {% block content %}
 
     {% endblock %}
-</section>
 
 <footer>
     <div class="footer-container">

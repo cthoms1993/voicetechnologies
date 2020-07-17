@@ -69,6 +69,14 @@ section {
     color: white;
 }
 
+.continue-btn{
+    background-color: white;
+    color: #562b5e;
+}
+.continue-btn:hover{
+    background-color: #562b5e;
+    color: white;
+}
 .footer-items:hover{
     background-color: #ff8200;
     color: white;
