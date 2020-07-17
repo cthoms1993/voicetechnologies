@@ -14,22 +14,22 @@
     <div class="container-fluid products-container">
         <div class="row justify-content-around">
             {% for product in products %}
-                <div class="col-10 col-lg-10 col-xl-8 product-col">
+                <div class="col-10 col-xl-8 product-col">
                     <div class="card mb-3 home-card product-card">
                         <div class="row">
-                            <div class="col-12 col-md-4">
+                            <div class="col-12 col-xl-4">
                                 <div class="cart-image product rounded-circle"
                                      style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
                                 </div>
                             </div>
 
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 col-xl-4">
                                 <div class="card-body">
                                     <p class="card-text">{{ product.description }}</p>
                                     <h4 class="card-text">£{{ product.price }} per user license</h4>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 col-xl-4">
                                 <div class="card-body add-body">
                                     <form method="post" action="{% url 'add_to_cart' product.id %}">
                                         {% csrf_token %}
