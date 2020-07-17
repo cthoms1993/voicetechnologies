@@ -14,11 +14,10 @@ section {
     margin-bottom: 30px;
 }
 
-footer {
+.footer-container {
+    padding: 30px;
     background-image: url("/media/images/header.png");
-    height: 100px;
-    margin: 0;
-    padding-bottom: 0;
+    color: #562b5e;
 }
 
 .container {
@@ -65,6 +64,17 @@ footer {
     color: white;
 }
 
+.footer-items{
+    background-color: #562b5e;
+    color: white;
+}
+
+.footer-items:hover{
+    background-color: #ff8200;
+    color: white;
+}
+
+
 .orange {
     color: #ff8200;
 }
@@ -90,6 +100,15 @@ footer {
     height: 350px;
 }
 
+#social-link{
+    color: #562b5e;
+    font-size: 40px;
+}
+
+#social-link:hover{
+    color: #ff8200;
+}
+
 
 .img-container {
     background-image: url("/media/images/11570_VT_1920_1440.jpg");
@@ -113,12 +132,6 @@ footer {
 }
 
 
-.middle-container {
-    color: #fff;
-    background-color: #562b5e;
-    padding-bottom: 20px;
-
-}
 
 .products-container {
     padding-top: 20px;
@@ -144,7 +157,6 @@ footer {
 
 .register-container {
     margin-top: 20px;
-    margin-bottom: 30px;
 }
 
 .description-row {
@@ -161,7 +173,7 @@ footer {
     padding-bottom: 30px;
 }
 
-.home-lower-container {
+.home-container {
     padding-top: 30px;
 }
 
@@ -302,12 +314,6 @@ caption p {
     padding-top: 20px;
 }
 
-
-.social-container {
-    width: 400px;
-    margin: 40vh auto;
-    text-align: center;
-}
 
 .prod-sub {
     color: #ff8200;

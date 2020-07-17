@@ -88,15 +88,49 @@
 {% block header %}
 {% endblock %}
 
-<section>
+<section class="content-section">
     {% block content %}
 
     {% endblock %}
 </section>
 
 <footer>
-
+    <div class="footer-container">
+        <div class="row align-items-center footer-row">
+            <div class="col-12 col-md-4 text-center ">
+                <a href="{% url 'contact' %}" class=" btn footer-items">Contact us</a>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <h4>created by Thomson Web design</h4>
+                <h4>for educational purposes only</h4>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <ul class="list-inline social-links ">
+                    <li class="list-inline-item ">
+                        <a id="social-link" target="_blank" href=""
+                           rel="noopener">
+                            <i class=" fab fa-twitter"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="social-link" target="_blank" href="">
+                           <i class="fab fa-linkedin-in"></i>
+                            <span class="sr-only">Linkedin</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="social-link" target="_blank" href="">
+                           <i class="fab fa-youtube"></i>
+                            <span class="sr-only">Find Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
