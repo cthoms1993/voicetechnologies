@@ -64,7 +64,7 @@
             </li>
             {% if user.is_authenticated %}
                 <li class="nav-item user-item"><a class="nav-link" href="{% url 'logout' %}">Log Out <i
-                    class="fas fa-sign-out-alt"></i></a></li>
+                        class="fas fa-sign-out-alt"></i></a></li>
             {% else %}
                 <li class="nav-item user-item"><a class="nav-link" href="{% url 'login' %}">Log
                     In</a>
@@ -88,10 +88,15 @@
 {% block header %}
 {% endblock %}
 
+<section>
+    {% block content %}
 
-{% block content %}
-{% endblock %}
+    {% endblock %}
+</section>
 
+<footer>
+
+</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>

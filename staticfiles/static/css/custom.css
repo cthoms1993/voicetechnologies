@@ -9,6 +9,18 @@ html, body {
 
 }
 
+section {
+    min-height: calc(100vh - 400px);
+    margin-bottom: 30px;
+}
+
+footer {
+    background-image: url("/media/images/header.png");
+    height: 100px;
+    margin: 0;
+    padding-bottom: 0;
+}
+
 .container {
     margin-right: 0;
 }
@@ -48,7 +60,7 @@ html, body {
     color: white;
 }
 
-.btn-vt:hover{
+.btn-vt:hover {
     background-color: #562b5e;
     color: white;
 }
@@ -66,18 +78,17 @@ html, body {
 }
 
 
-.card{
+.card {
     margin-bottom: 20px;
 }
+
 .about-card {
     height: 450px;
 }
 
-.index-card{
+.index-card {
     height: 350px;
 }
-
-
 
 
 .img-container {
@@ -159,7 +170,8 @@ html, body {
     margin-bottom: 20px;
 
 }
-.container-margin{
+
+.container-margin {
     margin-bottom: 30px;
 }
 
@@ -344,11 +356,6 @@ th {
     font-size: 20px;
 }
 
-footer{
-    padding-top: 30px;
-}
-
-
 /*media queries*/
 @media (min-width: 320px) {
     .header-container {
@@ -425,9 +432,10 @@ footer{
 
 @media (min-width: 1025px) {
 
-    .img-container{
-         background-image: url("/media/images/VTheader.png");
+    .img-container {
+        background-image: url("/media/images/VTheader.png");
     }
+
     .win-web-image {
         height: 150px;
         width: 700px;
