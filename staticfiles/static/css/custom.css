@@ -3,25 +3,18 @@ html, body {
     margin: 0;
     background-color: #562b5e;
     color: white;
-    height: auto;
+    height: 100vh;
     overflow-x: hidden;
 
+
 }
 
-nav{
-    height: 100px;
-}
 .container {
     margin-right: 0;
 }
 
-.form-control{
+.form-control {
     color: white;
-}
-
-.navbar-nav{
-    margin: 0;
-    padding: 0;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -29,9 +22,10 @@ nav{
 
 }
 
-.nav-item{
-    font-size: 20px;
+.nav-item {
+    font-size: 15px;
 }
+
 .login-form {
     margin-top: 5px;
 }
@@ -46,11 +40,16 @@ nav{
 
 .logged-in-text {
     color: #ff8200;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .btn-vt {
     background-color: #ff8200;
+    color: white;
+}
+
+.btn-vt:hover{
+    background-color: #562b5e;
     color: white;
 }
 
@@ -66,14 +65,20 @@ nav{
     color: white;
 }
 
+
+.card{
+    margin-bottom: 20px;
+}
 .about-card {
     height: 450px;
 }
 
-.card-link {
-    padding-top: 0;
-    margin: 0;
+.index-card{
+    height: 350px;
 }
+
+
+
 
 .img-container {
     background-image: url("/media/images/VTheader.png");
@@ -127,6 +132,7 @@ nav{
 
 .register-container {
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .description-row {
@@ -198,7 +204,7 @@ nav{
     height: 150px;
 }
 
-.blog-image{
+.blog-image {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -210,8 +216,8 @@ nav{
 
 }
 
-.blog-detail-image{
-    height:300px;
+.blog-detail-image {
+    height: 300px;
     width: 300px;
 }
 
@@ -255,7 +261,7 @@ caption p {
     height: 600px;
 }
 
-.product-col{
+.product-col {
     padding-top: 30px;
 }
 
@@ -376,13 +382,6 @@ hr.rounded {
     -webkit-text-fill-color: #fff;
 }
 
-footer {
-    height: 200px;
-    padding-top: 100px;
-    color: #A9A9A9;
-    background-color: #562b5e;
-}
-
 
 .form-control {
     font-size: 20px;
@@ -415,6 +414,11 @@ th {
 .about-text {
     font-size: 20px;
 }
+
+footer{
+    padding-top: 30px;
+}
+
 
 /*media queries*/
 @media (min-width: 320px) {
@@ -501,7 +505,7 @@ th {
         font-size: 12px;
     }
 
-    .product-card{
+    .product-card {
         height: 300px;
     }
 
