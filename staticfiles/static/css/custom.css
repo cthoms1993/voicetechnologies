@@ -64,20 +64,22 @@ section {
     color: white;
 }
 
-.footer-items{
+.footer-items {
     background-color: #562b5e;
     color: white;
 }
 
-.continue-btn{
+.continue-btn {
     background-color: white;
     color: #562b5e;
 }
-.continue-btn:hover{
+
+.continue-btn:hover {
     background-color: #562b5e;
     color: white;
 }
-.footer-items:hover{
+
+.footer-items:hover {
     background-color: #ff8200;
     color: white;
 }
@@ -108,15 +110,21 @@ section {
     height: 350px;
 }
 
-#social-link{
+
+#social-link {
     color: #562b5e;
     font-size: 40px;
+    border: 0;
 }
 
-#social-link:hover{
+#social-link:hover {
     color: #ff8200;
 }
 
+.list-group-item{
+    background-color: #562b5e;
+    color: white;
+}
 
 .img-container {
     background-image: url("/media/images/11570_VT_1920_1440.jpg");
@@ -138,7 +146,6 @@ section {
     clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
     color: white;
 }
-
 
 
 .products-container {

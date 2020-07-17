@@ -36,29 +36,21 @@
                     <h1 class="card-header text-center">Products
                         <hr class="rounded">
                     </h1>
-                    <div class="card-body">
+                    <div class="card-body index-body">
                         <div class="row">
                             <div class="col-12">
                                 <p class="card-text">Our team of in-house specialists develops innovative software
                                     including
                                     the award-winning WinVoicePro.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="row text-center">
-                            <div class="col-12">
-                                <p>
-                                    <a href="{% url 'formstream' %}" class="btn btn-sm  btn-vt card-link">Formstream</a>
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <p><a href="{% url 'winvoicepro' %}" class="btn btn-sm btn-vt card-link">WinVoicePro</a>
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <p><a href="{% url 'winvoiceweb' %}" class="btn btn-sm  btn-vt card-link">WinVoiceWeb</a>
-                                </p>
+                                <div class="list-group  text-center list-group-horizontal-xl">
+                                    <a href="{% url 'formstream' %}" class="list-group-item border-0">
+                                        FormStream
+                                    </a>
+                                    <a href="{% url 'winvoicepro' %}" class="list-group-item border-0">WinvoicePro
+                                    </a>
+                                    <a href="{% url 'winvoiceweb' %}" class="list-group-item border-0">WinVoiceWeb
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -70,7 +62,7 @@
                         Blog
                         <hr class="rounded">
                     </h1>
-                    <div class="card-body">
+                    <div class="card-body index-body">
                         <p class="card-text">Read all about the latest news, case studies and product reviews
                             from the
                             team at voice technologies.</p>
