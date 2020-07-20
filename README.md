@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.com/cthoms1993/voicetechnologies.svg?branch=master)](https://travis-ci.com/cthoms1993/voicetechnologies)
