@@ -28,7 +28,6 @@ section {
     color: white;
 }
 
-
 .navbar .navbar-nav .nav-link:hover {
     color: #ff8200;
 
@@ -128,7 +127,7 @@ section {
 }
 
 .img-container {
-    background-image: url("/media/images/VTheader.png");
+    background-image: url("/media/images/11570_VT_1920_1440.jpg");
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
