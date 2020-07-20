@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+
 import dj_database_url
+
 if os.path.exists('env.py'):
     import env
 
@@ -28,6 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'voicetechnology.herokuapp.com',
+    '127.0.0.1',
 
 ]
 
