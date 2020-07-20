@@ -28,10 +28,6 @@ section {
     color: white;
 }
 
-.navbar-brand{
-    background-image: url("/media/images/logo-inverse.png");
-}
-
 .navbar .navbar-nav .nav-link:hover {
     color: #ff8200;
 
