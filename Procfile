@@ -1,0 +1,1 @@
+web: gunicorn voicetechms4.wsgi:application
