@@ -1,0 +1,474 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: #562b5e;
+    color: white;
+    height: 100vh;
+    overflow-x: hidden;
+
+
+}
+
+section {
+    min-height: calc(100vh - 400px);
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    padding: 30px;
+    background-image: url("/media/images/header.png");
+    color: #562b5e;
+}
+
+.container {
+    margin-right: 0;
+}
+
+.form-control {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ff8200;
+
+}
+
+.nav-item {
+    font-size: 15px;
+}
+
+.login-form {
+    margin-top: 5px;
+}
+
+.dropdown-menu {
+    background-color: #562b5e;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.logged-in-text {
+    color: #ff8200;
+    font-size: 15px;
+}
+
+.btn-vt {
+    background-color: #ff8200;
+    color: white;
+}
+
+.btn-vt:hover {
+    background-color: #562b5e;
+    color: white;
+}
+
+.footer-items {
+    background-color: #562b5e;
+    color: white;
+}
+
+.continue-btn {
+    background-color: white;
+    color: #562b5e;
+}
+
+.continue-btn:hover {
+    background-color: #562b5e;
+    color: white;
+}
+
+.footer-items:hover {
+    background-color: #ff8200;
+    color: white;
+}
+
+
+.orange {
+    color: #ff8200;
+}
+
+#link {
+    color: #ff8200;
+}
+
+#link:hover {
+    color: white;
+}
+
+
+.card {
+    margin-bottom: 20px;
+}
+
+.about-card {
+    height: 450px;
+}
+
+.index-card {
+    height: 350px;
+}
+
+
+#social-link {
+    color: #562b5e;
+    font-size: 40px;
+    border: 0;
+}
+
+#social-link:hover {
+    color: #ff8200;
+}
+
+.list-group-item{
+    background-color: #562b5e;
+    color: white;
+}
+
+.img-container {
+    background-image: url("/media/images/11570_VT_1920_1440.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+
+}
+
+
+.header-container {
+    background-image: url("/media/images/header.png");
+    background-position: center, center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 600px;
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+    color: white;
+}
+
+
+.products-container {
+    padding-top: 20px;
+}
+
+.cart-container {
+    color: #fff;
+    padding-top: 50px;
+}
+
+.staff-container {
+    padding-top: 50px;
+}
+
+.checkout-container {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.payment-container {
+    padding-top: 30px;
+}
+
+.register-container {
+    margin-top: 20px;
+}
+
+.description-row {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.staff-title-row {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.intro-row {
+    padding-bottom: 30px;
+}
+
+.home-container {
+    padding-top: 30px;
+}
+
+.blog-container {
+    padding-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+.container-margin {
+    margin-bottom: 30px;
+}
+
+
+.store-img {
+    background-color: white;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+
+.icon-bar {
+    background-color: #fff;
+}
+
+.accountform {
+    padding-top: 20px;
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+
+
+}
+
+.label-warning[href],
+.badge-warning[href] {
+    background-color: #ff8200;
+}
+
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+}
+
+.blog-image {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.blog-detail-image {
+    height: 300px;
+    width: 300px;
+}
+
+caption p {
+    word-wrap: break-word;
+}
+
+.row.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.logo {
+    font-size: 150px;
+    color: #ff8200;
+}
+
+.page-title {
+    font-size: 200px;
+    color: #562b5e;
+}
+
+.title-col {
+    padding-top: 50px;
+}
+
+
+.home-card {
+    border-radius: 17px;
+    background: linear-gradient(145deg, #4d2755, #5c2e65);
+    box-shadow: 19px 19px 36px #412047,
+    -19px -19px 36px #6c3676;
+}
+
+.staff-card {
+    height: 600px;
+}
+
+.product-card {
+    height: 600px;
+}
+
+.product-col {
+    padding-top: 30px;
+}
+
+.input-group {
+    padding-bottom: 20px;
+}
+
+.add-body {
+    padding-bottom: 20px;
+}
+
+.contact-card {
+    width: 600px;
+}
+
+.signin-card {
+    height: 500px;
+}
+
+.register-card {
+    height: 600px;
+    padding-top: 20px;
+}
+
+
+.prod-sub {
+    color: #ff8200;
+}
+
+hr.rounded {
+    width: 100px;
+    height: 1px;
+    background-color: #ff8200;
+}
+
+.winimage {
+    height: 100px;
+    width: 100px;
+}
+
+.form-control {
+    font-size: 20px;
+}
+
+.img-blogpost {
+    margin-bottom: 20px;
+}
+
+.contact-row {
+    margin-top: 30px;
+}
+
+.contact-title {
+    margin-top: 10px;
+}
+
+.table-title {
+    background-color: #ff8200;
+}
+
+th {
+    font-size: 15px;
+}
+
+.cart-image {
+    margin-top: 20px;
+}
+
+.about-text {
+    font-size: 20px;
+}
+
+/*media queries*/
+@media (min-width: 320px) {
+    .header-container {
+        height: 300px;
+    }
+
+    .page-title {
+        font-size: 45px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .winimage {
+        height: 50px;
+        width: 50px;
+    }
+
+    .win-web-image {
+        height: 80px;
+        width: 300px;
+    }
+
+    .prod-sub {
+        font-size: 15px;
+    }
+
+    .cart-product {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .header-container {
+        height: 400px;
+    }
+
+    .page-title {
+        font-size: 100px;
+    }
+
+    .logo {
+        font-size: 80px;
+    }
+
+    .winimage {
+        height: 80px;
+        width: 80px;
+    }
+
+    .win-web-image {
+        height: 150px;
+        width: 500px;
+    }
+
+    .prod-sub {
+        font-size: 30px;
+    }
+
+    .description-row {
+        font-size: 8px;
+    }
+
+    .cart-product {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .img-container {
+        background-image: url("/media/images/VTheader.png");
+    }
+
+    .win-web-image {
+        height: 150px;
+        width: 700px;
+    }
+
+    .description-row {
+        font-size: 12px;
+    }
+
+    .product-card {
+        height: 300px;
+    }
+
+
+}
