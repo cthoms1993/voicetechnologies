@@ -102,7 +102,7 @@ It is also used for all the call to actions on the site to stand out for the cus
 #### Logo and imagery 
 the Logo and imagery (Examples Below) through out the site was supplied by my CEO at voice technologies, using these as guides it allowed me to pinpoint the exact colour scheme for the site, To do this I used <a href="https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka?hl=en">Eye dropper</a> which is a google tool for picking colours from images and websites.
 <p>
-<img src="https://ms4ecommerce.s3.eu-west-2.amazonaws.com/media/images/logo-inverse.png" alt="Voice tech logo">
+<img src="https://ms4ecommerce.s3.eu-west-2.amazonaws.com/media/images/voice-technologies_positive_MONO.png" alt="Voice tech logo">
 </p>
 
 <p>
