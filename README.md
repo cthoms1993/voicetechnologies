@@ -124,17 +124,52 @@ will present the company logo, below that is a simple three card design to navig
  <details>
    <summary>Home (Index) Template Wireframe</summary>
 
-   <p align="center">
+   <p>
       <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/homepage%20-mobile-view%20.png" alt="Home (Index) template mobile wireframe">
    </p>
 
-   <p align="center">
+   <p>
       <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/homepage%20-%20tablet%20-desktop%20.png" alt="Home (Index) template tablet-desktop wireframe">
    </p>
    </details>
 
+***
 
+* About us page:
+The about us page gives an overview of the business, its ethos and what it does.
+below this description is a section for meeting some of the staff which gives the user a feel or the type of people the company employs.
+This is pulled from the staff application and managed via the admin panel. 
 
+<details>
+   <summary>Home (Index) Template Wireframe</summary>
+
+   <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/about%20us%20-%20mobile-view.png" alt="about us  template mobile wireframe">
+   </p>
+
+   <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/about%20us%20-%20tablet_desktop.png" alt="about us template tablet-desktop wireframe">
+   </p>
+   </details>
+
+***
+
+* Store page:
+This page as the title suggests is the main store page fro the site.
+This page allows users to view the products on offer, check the costs and add a quantity of there choosing the cart. 
+the products on this page are pulled from the products application.these are managed directly from the admin panel and are shown here.
+
+<details>
+ <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/Store-mobile-view.png" alt="cart template mobile wireframe">
+ </p>
+
+   <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/store-tablet-desktop.png" alt="cart template tablet-desktop wireframe">
+   </p>
+   </details>
+
+***
 
 
 
