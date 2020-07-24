@@ -7,11 +7,10 @@
 * [User Experience](#user-experience)
     * [User Stories](#user-stories)
     * [Design](#design)
-        * [1. Font](#1-font)
-        * [2. Color Scheme](#2-color-scheme)
-        * [3. Logo](#3-logo)
-        * [4. Geometry](#4-geometry)
-        * [5. Wireframing & Proposed/Implemented Functionality per Page](#5-wireframing--proposedimplemented-functionality-per-page)
+        * [1. Font](#font)
+        * [2. Color Scheme](#color-scheme)
+        * [3. Logo](#logo)
+        * [5. Wireframing & site functionality per Page](#wireframes)
 * [Technology Used](#technology-used)
 * [Database](#database)
 * [Features](#features)
@@ -100,18 +99,39 @@ The secondary colour ![#ff8200](https://placehold.it/15/ff8200/000000?text=+) `#
 It is also used for all the call to actions on the site to stand out for the customer to have a clear idea of where to click. 
 
 #### Logo and imagery 
-the Logo and imagery (Examples Below) through out the site was supplied by my CEO at voice technologies, using these as guides it allowed me to pinpoint the exact colour scheme for the site, To do this I used <a href="https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka?hl=en">Eye dropper</a> which is a google tool for picking colours from images and websites.
-<p>
-<img src="https://ms4ecommerce.s3.eu-west-2.amazonaws.com/media/images/voice-technologies_positive_MONO.png" alt="Voice tech logo">
-</p>
+the Logo and imagery (Example Below) through out the site was supplied by my CEO at voice technologies, using these as guides it allowed me to pinpoint the exact colour scheme for the site, To do this I used <a href="https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka?hl=en">Eye dropper</a> which is a google tool for picking colours from images and websites.
 
 <p>
 <img src="https://ms4ecommerce.s3.eu-west-2.amazonaws.com/media/images/VTheader.png" alt="Voice tech logo">
 </p>
 
+#### Wireframes 
 
+* Base template:
 
+The base template contains the components that are consistent across all pages of the site.
+These are the navigation bar and the footer. the navigation bar as you will see from thew following wireframes.
+the navigation bar has 5 standard links to the left - home, about us, products,store and blog. on the right the cart icon is always available. 
+if the user isn't logged in they will see navlinks for "register" and "log in".
+if they have logged in they will see an icon for "log out" and a piece of navbar text to say they have logged in as their chosen username.
 
+The footer is a contrasting colour from the navbar to highlight the social icons contact us buttons.
+
+* Home page:
+This is our primary landing page and the first thing the customer see's. the main image presented (depending on screen size)
+will present the company logo, below that is a simple three card design to navigate the user to aspects of the site - about us, products, and blog. 
+
+ <details>
+   <summary>Home (Index) Template Wireframe</summary>
+
+   <p align="center">
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/homepage%20-mobile-view%20.png" alt="Home (Index) template mobile wireframe">
+   </p>
+
+   <p align="center">
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/homepage%20-%20tablet%20-desktop%20.png" alt="Home (Index) template tablet-desktop wireframe">
+   </p>
+   </details>
 
 
 

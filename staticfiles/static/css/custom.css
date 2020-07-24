@@ -131,7 +131,7 @@ section {
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 800px;
+    height: 600px;
     clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
 
 }
@@ -454,8 +454,10 @@ th {
 @media (min-width: 1025px) {
 
     .img-container {
+        height: 800px;
         background-image: url("https://ms4ecommerce.s3.eu-west-2.amazonaws.com/media/images/VTheader.png");
     }
+
 
     .win-web-image {
         height: 150px;
