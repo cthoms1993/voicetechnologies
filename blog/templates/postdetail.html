@@ -35,7 +35,6 @@
                     </div>
                     <div class="row justify-content-around">
                         <div class="col-10 col-lg-8">
-                            <hr class="rounded">
                             <h4>Total comments: {{ comments.count }}</h4>
                             {% for comment in comments %}
                                 <div class="comments">
@@ -47,7 +46,6 @@
                                     </p>
                                     {{ comment.body| linebreaks }}
                                 </div>
-                                <hr class="rounded">
                             {% endfor %}
                         </div>
                     </div>
