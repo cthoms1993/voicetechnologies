@@ -8,7 +8,7 @@
     * [User Stories](#user-stories)
     * [Design](#design)
         * [1. Font](#font)
-        * [2. Color Scheme](#color-scheme)
+        * [2. Color Scheme](#colour-scheme)
         * [3. Logo](#logo)
         * [5. Wireframing & site functionality per Page](#wireframes)
 * [Technology Used](#technology-used)
@@ -118,6 +118,7 @@ if they have logged in they will see an icon for "log out" and a piece of navbar
 The footer is a contrasting colour from the navbar to highlight the social icons contact us buttons.
 
 * Home page:
+
 This is our primary landing page and the first thing the customer see's. the main image presented (depending on screen size)
 will present the company logo, below that is a simple three card design to navigate the user to aspects of the site - about us, products, and blog. 
 
@@ -136,12 +137,13 @@ will present the company logo, below that is a simple three card design to navig
 ***
 
 * About us page:
+
 The about us page gives an overview of the business, its ethos and what it does.
 below this description is a section for meeting some of the staff which gives the user a feel or the type of people the company employs.
 This is pulled from the staff application and managed via the admin panel. 
 
 <details>
-   <summary>Home (Index) Template Wireframe</summary>
+   <summary>About us Template Wireframe</summary>
 
    <p>
       <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/about%20us%20-%20mobile-view.png" alt="about us  template mobile wireframe">
@@ -155,11 +157,13 @@ This is pulled from the staff application and managed via the admin panel.
 ***
 
 * Store page:
+
 This page as the title suggests is the main store page fro the site.
 This page allows users to view the products on offer, check the costs and add a quantity of there choosing the cart. 
 the products on this page are pulled from the products application.these are managed directly from the admin panel and are shown here.
 
 <details>
+<summary>Store Template Wireframe</summary>
  <p>
       <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/Store-mobile-view.png" alt="cart template mobile wireframe">
  </p>
@@ -170,6 +174,58 @@ the products on this page are pulled from the products application.these are man
    </details>
 
 ***
+
+* Product pages
+
+These pages give a description and more in depth look at the products the business sells, and some key points on the product. 
+each product page then has a call to action button at the bottom directing the user to the store to purchase the product. 
+
+<details>
+<summary>Products Template Wireframe</summary>
+ <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/product-mobile.png" alt="product template mobile wireframe">
+ </p>
+
+   <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/products-tablet-desktop%20(1).png" alt="product template tablet-desktop wireframe">
+   </p>
+   </details>
+
+***
+
+* Blog/Blog detail pages
+
+ blog page: This page is used to display a simplified version of the blog posts uploaded by the admin via the admin panel and pulled from the blog application. 
+ using bootstrap cards to display each post, with a picture attached to the post, a condensed summary of the post, post tile and published date. 
+ each card will have a call to action on it allowing the user to read the full post on a separate page.
+ 
+ Blog detail page:
+ Once the user clicks the call to action button on the simplified post, they are redirected to the full post where they can see the full article, read comments left on the post and add their own comments if they are a registered user and have logged in.
+ 
+ 
+ <details>
+<summary>Blog Template Wireframe</summary>
+ <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/Blog-tablet-desktop.png" alt="blog template tablet-desktop wireframe">
+ </p>
+
+   <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/blog%20-%20mobile.png" alt="blog template mobile wireframe">
+   </p>
+    <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/Blog-detail-tablet-desktop.png" alt="blog template tablet-desktop wireframe">
+    </p>
+
+   <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/blog-detail-mobile.png" alt="blog template mobile wireframe">
+   </p>
+   </details>
+
+***
+ 
+ 
+
+
 
 
 
