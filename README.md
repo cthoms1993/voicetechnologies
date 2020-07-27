@@ -9,18 +9,15 @@
     * [Design](#design)
         * [1. Font](#font)
         * [2. Color Scheme](#colour-scheme)
-        * [3. Logo](#logo)
+        * [3. Logo](#logo-and-imagery)
         * [5. Wireframing & site functionality per Page](#wireframes)
 * [Technology Used](#technology-used)
-* [Database](#database)
 * [Features](#features)
     * [Future Features](#future-features)
-    * [Defensive Design](#defensive-design)
 * [Testing](#testing)
-    * [Found Bugs & Fixes](#found-bugs--fixes)    
+    * [Bugs & Fixes](#bugs-and-fixes)    
 * [Deployment](#deployment)
 * [Credits](#credits)
-    * [Special Thanks & Acknowledgements](#special-thanks--acknowledgements)
 
 ***
 ## What does it do and what does it need to fulfill?
@@ -315,7 +312,7 @@ There is also a map below the form to give the user an idea of where exactly the
 
 ***
 
-[back to top](#table-of-contents)
+[back to top](# table-of-contents)
 
 ## Technology Used
 
@@ -347,14 +344,79 @@ this was used to host the information from my applications thast required databa
 * <a href="https://aws.amazon.com/s3/">Amazon AWS S3 </a> - Used for hosting images relating to staff and products applications connected to database. 
 * <a href="https://www.mapbox.com/">Mapbox</a> - used for displaying location map on contact us page, a simpler option compared to using google maps API.
 
+## Features:
+
+My Projects has many key features:
 
 
+* User Authorisation and authentication
+* Stripe Integration to allow for e-commerce functionality.
+* A contact form that can be used by all user levels which sends an email to the Administrator of the application, notifying them of a new Contact form submission. 
+* a comments section on the blog where authenticated users can post there options and interact with others.
+
+### future features
+
+* edit and delete for users to change there own blog comments.
+* a profile section that shows the user their order history.
+* password reset functionality. 
+* the company have a whole host of 3rd party products they can provide which are not shown here for copyright reasons, but i would hope to add them all in future to provide a fully operational product store.
+* one of the products provided is speech recognition I would hope to incorporate this into future versions of the site eg: form completion.
 
 
+## Testing
+
+Testing was done manually throughout the production of this project, on multiple devices ( Ipads.,Iphones, Microsoft surface, google pixel-2 and desktop. )
+This made sure that any bugs on varying screen resolutions where fixed throughout.
+code was passed through validators throughout to make sure it was valid and od good quality. 
+The Site was tested on most modern browsers to make sure responsiveness and functionality of the site was good across all browsers.
+
+## bugs and fixes
+
+Throughout production and constant testing both locally and via my deployed site on heroku, a few bugs crept up. 
+
+* When checking the responsiveness of the site there was an error with the footer positioning for the store, log in and log out pages only. 
+the footer was jumping up on all occasions and leaving negative space at the bottom of the screen, this seemed to be only an issues with screen withs of 1024px and above. 
+
+This was fixed by adding the below css and adding section tags to the mentioned pages, it forced the footer back to the bottom of the page. by using the -400px it reduced the amount of negative space between the footer and the sign/register cards
+section {
+    min-height: calc(100vh - 400px);
+}
+
+* When I was in a position to deploy my site it was quickly apparent that any images stored in the postgres database for both staff and product apps where not pulling through correctly. once new products where added via the admin portal. images would show but once the page ws refreshed they would no longer appear. 
+this was fixed fairly simply my hosting these images in an Amazon AWS S3 bucket. 
+This presented another issue however , as the images being used for static use in html and css saved now would not load correctly. Again this was remedied by moving all images used for static purposed to the AWS bucket also. 
 
 
+## Deployment
+
+This Full Stack Django application was fully developed and version controlled Using Jetbrains Pycharm IDE.
+It was version controlled locally via git and online using github.
+Any environmental variables that had to be secured where stored in an eny.py file and hidden using a gitignore File to avoid being pushed to the live repo in github. 
+
+These variables hidden in the env.py where translated into the production site in heroku settings under the Config variables section.
+
+ 
+ this application was deployed by:
+
+* Pushing the code from my IDE to Github via Git and the built-in PyCharm terminal.
+* Creating an app on Heroku & deploying it from same.
+* Adding any secret environment variables to the Config Vars of Heroku App Settings tab and assigning those the requisite secret values held in the env.py for Live Deployment.
+* Installing and Adding Whitenoise to Middleware of project settings.py file to allow our application to serve it's own static files.
+* In Heroku 'Deploy tab', deployment method was set to Github with automatic deploys set from the master branch.
+* Once the above was done, the app was deployed via this link.
+
+To clone the repository:
+
+* Select the Repository from the Github Dashboard.
+* Click on the "Clone or download" green button located above and to the right of the File Structure table.
+* Click on the "clipboard icon" to the right of the Git URL to copy the web URL of the Clone.
+* Open your preferred Integrated Development Environment (IDE) and navigate to the terminal window.
+* Change the directory to where you want to clone the repository too. (In the case of PyCharm the directory path can be found through the "Navigate" tab).
+* Paste the Git URL copied from above and click "Ok". (Again in the case of PyCharm once you click "clone", Git Root mapping will be automatically set to the project Root directory).
+* Once open create an env.py file and assign the Database URL, Secret Key, Stripe Publishable & Stripe Secret, and finally Emailing variables. Ensure the env.py is living in the root of your project directory and then add it to .gitignore to ensure your Secret details aren't exposed.
 
 
+## Credits
 
 
 
