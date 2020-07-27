@@ -303,7 +303,7 @@ There is also a map below the form to give the user an idea of where exactly the
 
 
 <details>
-<summary>Login/Logout Template Wireframe</summary>
+<summary>Contact Us Template Wireframe</summary>
   <p>
       <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/contact-tablet-desktop.png" alt="logout template tablet-desktop wireframe">
  </p>
@@ -314,6 +314,37 @@ There is also a map below the form to give the user an idea of where exactly the
   </details>
 
 ***
+
+[back to top](#table-of-contents)
+
+## Technology Used
+
+* HTML
+* CSS
+* javascript
+* python
+
+* <a href="https://www.djangoproject.com/">Django</a> - framework used to create the use of models and templates. 
+* <a href="https://www.getbootstrap.com/">Bootstrap</a> - used to create the core layout of the project, using the grid system for responsive functionality.
+* <a href="https://www.bootswatch.com/">Bootswatch</a> - used in combination with bootstrap for the initial theme and for components of the site. 
+* <a href="https://git-scm.com/">Git</a> - plug in installed in pycharm ide for version control. 
+* <a href="https://github.com/">Github</a> - Used to create repository for storing project and linking to heroku for project Deployment.
+* <a href="https://www.heroku.com/">Heroku</a> - Used to deploy project into production. 
+* <a href="https://www.jetbrains.com/pycharm">Pycharm IDE</a> - pycharm was used as my IDE for this project. 
+
+#### Tools
+
+
+* <a href="https://www.postgresql.org/">PostgreSQL</a> - PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
+this was used to host the information from my applications thast required database functionality.
+* <a href="http://whitenoise.evans.io/en/stable/">WhiteNoise</a> - WhiteNoise allows your web app to serve its own static files, making it a self-contained unit that can be deployed.
+* <a href="http://eye-dropper.kepi.cz/">Eye Dropper (Color Picker)</a> -Eye Dropper is open source extension which allows you to pick colors from web pages, color picker and your personal color history.
+* Google Chrome DevTools ~ Used to check responsiveness and fix any styling errors.
+* <a href="https://www.lucidchart.com/">Lucid-chart </a> - Used for the creation of wireframes.
+* <a href="https://validator.w3.org/">W3C HTML Validator</a> &a> - Used to check my code is valid. 
+* <a href="https://autoprefixer.github.io/">Autoprefixer CSS Online</a> ~ Used to check for possible webkits required in the applications stylesheet ensuring Cross-browser support.
+* <a href="https://fontawesome.com/icons?d=gallery">Font Awesome </a> - For social icons and other imagery used throughout the site. 
+
 
 
 
