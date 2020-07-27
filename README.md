@@ -17,7 +17,7 @@
 * [Testing](#testing)
     * [Bugs & Fixes](#bugs-and-fixes)    
 * [Deployment](#deployment)
-* [Credits](#credits)
+* [Credits](#credits-and-acknowledgements)
 
 ***
 ## What does it do and what does it need to fulfill?
@@ -416,7 +416,16 @@ To clone the repository:
 * Once open create an env.py file and assign the Database URL, Secret Key, Stripe Publishable & Stripe Secret, and finally Emailing variables. Ensure the env.py is living in the root of your project directory and then add it to .gitignore to ensure your Secret details aren't exposed.
 
 
-## Credits
+## Credits and Acknowledgements:
+
+* <a href="https://djangocentral.com/creating-comments-system-with-django/">Django Central</a> - helped me with comments system for te blog app.  
+* <a href="https://github.com/muvatech/Shopping-Cart-Using-Django-2.0-and-Python-3.6">Muvatech</a> - used to assist with the table product display for the cart and checkout app.
+
+* Thanks to code institute for providing me with the learning materials to successfully complete this project and continues support through out the course.
+Thanks to my mentor spencer Barriball for all his guidance and support through the entirety of my course.
+
+* lastly I should like to thank my partner who despite having being a mum to my 7 week old baby, has manged to put up with me stressing over this project!  
+
 
 
 
