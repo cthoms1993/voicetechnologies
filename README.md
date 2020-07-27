@@ -224,7 +224,7 @@ each product page then has a call to action button at the bottom directing the u
 ***
  
  
-*Cart page
+* Cart page
 
 This page is used to display the items and the quantity of each item selected from the store page.
 if the cart is empty a short message will appear to let the user know that the cart is empty and a call to action button ti visit the store to select items. 
@@ -233,9 +233,9 @@ if items are selected from the store the cart will show that item, and give a to
 The cart page contains a table to show the items in it, and two call to action buttons, one to return to store to continue shopping and another to checkout which will redirect the user to the checkout template to complete there purchase.
 
 <details>
-<summary>Store Template Wireframe</summary>
+<summary>Cart Template Wireframe</summary>
  <p>
-      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframescart-%20tablet-desktop.png" alt="store template tablet-desktop wireframe">
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/cart-%20tablet-desktop.png" alt="store template tablet-desktop wireframe">
  </p>
 
    <p>
@@ -245,12 +245,12 @@ The cart page contains a table to show the items in it, and two call to action b
 
 ***
 
-*Checkout Page
+* Checkout Page
 
 The checkout page is only accessible to logged in users and from the cart page if the cart has items in it. , when a user selects checkout on the cart page, if they are not logged in they will be redirected to the log in page with a message stating you must be logged in to make purchases. 
 The page will again show a table with the products selected by the user and added to the cart. It was also contain two django forms. one for contact details and another for payment details. 
 once the user has correctly filled in the forms the user must hit submit payment to complete the process. if this is successful they will be redirected to a completion page stating there purchase was successful.this page will contain a call to action button to return to home screen. 
-If the forms are filled in incorrectly Eg - card number is incorrect , the user will recieve a flash message warning them there has been an error. 
+If the forms are filled in incorrectly Eg - card number is incorrect , the user will receive a flash message warning them there has been an error. 
 
 <details>
 <summary>Checkout Template Wireframe</summary>
@@ -265,6 +265,40 @@ If the forms are filled in incorrectly Eg - card number is incorrect , the user 
 
 ***
  
+* login/register pages
+
+The login/register pages are both fairly straight forward.they both simple have the page title, and a card centre page containing either the log in form or registration form.
+These are both produced via django forms. the login form takes two input - username and password which the user would ave created in the registration form.
+The login form then searches the pool of created users in the postgres database to match against these, if tey are found the user is logged in, if the detail are incorrect an error message will appear. 
+
+The registration form has a similar style with more fields to complete, again the users details will be checked against the postgres database to make sure the data is not already present, if this is the case then an error message will display beneth the input that has incorrect or duplicate information. 
+
+Both pages contain links to the opposite pages for defensive design, if user selects the login page instead of register they will have the option to navigate via a call to action button to navigate to the register page and vise versa. 
+
+<details>
+<summary>Login/Logout Template Wireframe</summary>
+ <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/login-tablet-desktop.png" alt="login template tablet-desktop wireframe">
+ </p>
+
+   <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/login-mobile%20.png" alt="login template mobile wireframe">
+   </p>
+   <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/register-desktop-mobile.png" alt="logout template tablet-desktop wireframe">
+ </p>
+
+   <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/register-mobile.png" alt="logout template mobile wireframe">
+   </p>
+  </details>
+
+***
+
+
+
+
+
 
 
 
