@@ -295,8 +295,25 @@ Both pages contain links to the opposite pages for defensive design, if user sel
 
 ***
 
+* Contact us page
+
+Similar to the login and register pages , the contact us page contains a django form for completing the users details , in which they fill in there contact details, subject and the reason for their enquiry. 
+This is then sent to the admin portal under enquires. this then sends an email to the registered admin email address (This is hidden in an env.py for local use and in variables in heroku.)
+There is also a map below the form to give the user an idea of where exactly the business is located. 
 
 
+<details>
+<summary>Login/Logout Template Wireframe</summary>
+  <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/contact-tablet-desktop.png" alt="logout template tablet-desktop wireframe">
+ </p>
+
+   <p>
+      <img height="350" src="https://github.com/cthoms1993/voicetechnologies/blob/master/staticfiles/static/Wireframes/contact-mobile.png" alt="logout template mobile wireframe">
+   </p>
+  </details>
+
+***
 
 
 
