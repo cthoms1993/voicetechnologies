@@ -341,9 +341,14 @@ this was used to host the information from my applications thast required databa
 * <a href="http://eye-dropper.kepi.cz/">Eye Dropper (Color Picker)</a> -Eye Dropper is open source extension which allows you to pick colors from web pages, color picker and your personal color history.
 * Google Chrome DevTools ~ Used to check responsiveness and fix any styling errors.
 * <a href="https://www.lucidchart.com/">Lucid-chart </a> - Used for the creation of wireframes.
-* <a href="https://validator.w3.org/">W3C HTML Validator</a> &a> - Used to check my code is valid. 
+* <a href="https://validator.w3.org/">W3C HTML Validator</a> - Used to check my code is valid. 
 * <a href="https://autoprefixer.github.io/">Autoprefixer CSS Online</a> ~ Used to check for possible webkits required in the applications stylesheet ensuring Cross-browser support.
 * <a href="https://fontawesome.com/icons?d=gallery">Font Awesome </a> - For social icons and other imagery used throughout the site. 
+* <a href="https://aws.amazon.com/s3/">Amazon AWS S3 </a> - Used for hosting images relating to staff and products applications connected to database. 
+* <a href="https://www.mapbox.com/">Mapbox</a> - used for displaying location map on contact us page, a simpler option compared to using google maps API.
+
+
+
 
 
 
