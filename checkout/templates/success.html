@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap_tags %}
+{% block header %}
+    <div class="container-fluid section-container header-container">
+        <div class="row title-row align-items-center cart-title">
+            <div class="col-12 title-col">
+                <h1 class="page-title">Checkout<i class="fas fa-shopping-cart logo"></i></h1>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+    <section>
+        <div class="container-fluid success-container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-desc">Your Purchase was successful!</h1>
+                    <hr class="rounded">
+                    <a class="link" href="{% url 'home' %}">
+                        <button type="button" class="btn btn-vt">Return to homepage</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

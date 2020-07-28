@@ -14,6 +14,10 @@ from stripe import error
 stripe.api_key = settings.STRIPE_SECRET
 
 
+def success(request):
+    return render(request, 'success.html')
+
+
 @login_required()
 def checkout(request):
     if request.method == "POST":
@@ -48,9 +52,8 @@ def checkout(request):
                 messages.error(request, "Your card was declined!")
 
             if customer.paid:
-                messages.error(request, "You have successfully paid")
                 request.session['cart'] = {}
-                return redirect(reverse('products'))
+                return redirect(reverse('success'))
             else:
                 messages.error(request, "Unable to take payment")
         else:

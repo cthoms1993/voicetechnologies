@@ -9,11 +9,13 @@ html, body {
 
 }
 
+
 /*navbar*/
 
 .navbar .navbar-nav .nav-link:hover {
     color: #ff8200;
 }
+
 .nav-item {
     font-size: 15px;
 }
@@ -50,7 +52,6 @@ section {
     font-size: 150px;
     color: #ff8200;
 }
-
 
 
 /* containers*/
@@ -169,6 +170,16 @@ section {
     -19px -19px 36px #6c3676;
 }
 
+.index-card:hover{
+    border-color: #ff8200;
+    border-width: 5px;
+
+}
+
+.newclass{
+    border: #562b5e solid 5px;
+}
+
 /* form-control*/
 .form-control {
     color: white;
@@ -180,6 +191,7 @@ section {
 .login-form {
     margin-top: 5px;
 }
+
 .accountform {
     padding-top: 20px;
 }
@@ -206,7 +218,6 @@ section {
 }
 
 
-
 /* used for span  in page titles*/
 .orange {
     color: #ff8200;
@@ -216,6 +227,7 @@ section {
 .intro-row {
     padding-bottom: 30px;
 }
+
 .description-row {
     padding-top: 0;
     margin-top: 0;
@@ -245,7 +257,8 @@ section {
 .prod-sub {
     color: #ff8200;
 }
-add-body {
+
+.add-body {
     padding-bottom: 20px;
 }
 
