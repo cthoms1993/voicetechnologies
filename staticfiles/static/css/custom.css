@@ -385,11 +385,6 @@ hr.rounded {
         width: 50px;
     }
 
-    .win-web-image {
-        height: 80px;
-        width: 300px;
-    }
-
     .prod-sub {
         font-size: 15px;
     }
@@ -420,11 +415,6 @@ hr.rounded {
         width: 80px;
     }
 
-    .win-web-image {
-        height: 150px;
-        width: 500px;
-    }
-
     .prod-sub {
         font-size: 30px;
     }
@@ -440,18 +430,13 @@ hr.rounded {
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1158px) {
 
     .img-container {
         height: 800px;
         background-image: url("https://ms4ecommerce.s3.eu-west-2.amazonaws.com/media/images/VTheader.png");
     }
 
-
-    .win-web-image {
-        height: 150px;
-        width: 700px;
-    }
 
     .description-row {
         font-size: 12px;
