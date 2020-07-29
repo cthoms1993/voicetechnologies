@@ -1,13 +1,9 @@
-from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, reverse
 from django.contrib import auth, messages
-from django.contrib.auth.decorators import login_required
 from accounts.forms import UserLoginForm, UserRegistrationForm
-
+from home.views import home
 
 # create views here
-def index(request):
-    return render(request, 'index.html')
 
 
 def logout(request):
@@ -18,7 +14,7 @@ def logout(request):
 
 def login(request):
     if request.user.is_authenticated:
-        return redirect(reverse('index'))
+        return redirect(reverse('home'))
     if request.method == "POST":
         login_form = UserLoginForm(request.POST)
 
@@ -37,7 +33,7 @@ def login(request):
 
 def register(request):
     if request.user.is_authenticated:
-        return redirect(reverse('index'))
+        return redirect(reverse('home'))
     if request.method == "POST":
         registration_form = UserRegistrationForm(request.POST)
         if registration_form.is_valid():
@@ -48,15 +44,9 @@ def register(request):
             if user:
                 auth.login(user=user, request=request)
                 messages.success(request, "you have successfully registered")
-                return redirect(reverse('index'))
+                return redirect(reverse('login'))
             else:
                 messages.error(request, "Unable to register your account at this time")
     else:
         registration_form = UserRegistrationForm()
     return render(request, 'register.html', {"registration_form": registration_form})
-
-
-@login_required
-def profile(request):
-    """A view that displays the profile page of a logged in user"""
-    return render(request, 'profile.html')

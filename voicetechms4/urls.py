@@ -18,7 +18,6 @@ from django.contrib import admin
 from django.conf.urls import url, include
 from accounts import urls as urls_accounts
 from cart import urls as urls_cart
-from search import urls as urls_search
 from checkout import urls as urls_checkout
 from django.conf import settings
 from django.conf.urls.static import static
@@ -35,7 +34,6 @@ urlpatterns = [
                   url(r'^products/', include(urls_products)),
                   url(r'^cart/', include(urls_cart)),
                   url(r'^checkout/', include(urls_checkout)),
-                  url(r'^search/', include(urls_search)),
                   url(r'^blog/', include(urls_blog)),
                   url(r'^contact/', include(urls_contact)),
                   url(r'^about/', include(urls_staff)),
